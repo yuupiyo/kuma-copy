@@ -29,6 +29,12 @@
     display: block;
   }
 }
+// ロゴhover時
+@media (any-hover: hover) {
+  .p-header__logo a:hover {
+    opacity: 0.4;
+  }
+}
 
 // ナビゲーション
 .p-header__nav {

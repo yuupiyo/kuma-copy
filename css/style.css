@@ -167,6 +167,11 @@ a {
   display: block;
 }
 
+@media (any-hover: hover) {
+  .p-header__logo a:hover {
+    opacity: 0.4;
+  }
+}
 @media screen and (width >= 1024px) {
   .p-header__nav {
     display: flex;
