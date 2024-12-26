@@ -50,8 +50,8 @@
   align-items: center;
   gap: .5rem;
   position: relative;
-  padding: 0.32rem;
-  margin: -0.32rem;
+  padding: min(0.312vw,4px);
+  margin: max(-0.312vw,-4px);
   font-weight: 700;
   font-style: normal;
   font-size: clamp(1rem, 0.385rem + 0.96vw, 1.25rem);
