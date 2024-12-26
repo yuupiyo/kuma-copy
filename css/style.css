@@ -208,4 +208,17 @@ a {
     font-size: 2.6rem;
   }
 }
+.p-header__nav-main__item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: #e9352c;
+  z-index: -1;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
 /*# sourceMappingURL=style.css.map */
