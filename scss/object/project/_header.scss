@@ -2,14 +2,17 @@
 
 .p-header__inner {
   display: block;
-  height: 18rem;
-  padding:  min(3.91vw,40px) min(5.232vw,53.5291px) 0;
+  height: 12.8rem;
+  padding: min(9.3vw,40px) min(7.5vw,42px) 0;
+  @include g.s-tablet {
+    padding: min(5.215vw,40px) min(5.232vw,53.529px) 0;
+  }
   @include g.pc {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     height: 22rem;
-    padding: clamp(3.2rem, 1.231rem + 3.08vw, 4rem) clamp(12.56rem, 4.831rem + 12.08vw, 15.7rem) 0 clamp(5rem, 1.923rem + 4.81vw, 6.25rem);
+    padding: min(5vw,64px) min(19.625vw,251.2px) 0 min(7.8125vw,100px);
   }
   @include g.l-pc {
     padding: 8rem 31.4rem 0 10rem;
