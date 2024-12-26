@@ -50,7 +50,7 @@ $tb-viewport: 768; //デザインカンプの画面幅
 }
 
 //パソコンver.
-$pc-viewport: 1280; //デザインカンプの画面幅
+$pc-viewport: 1023; //デザインカンプの画面幅
 
 @function pc-vw($num, $width:$pc-viewport) {
   @return(1vw * $num/$width * 100);
