@@ -38,4 +38,7 @@
 .p-header__nav-main {
   position: relative;
   margin-top: g.rem(20);
+  & > li+li {
+    margin-left: g.rem(30.4);
+  }
 }

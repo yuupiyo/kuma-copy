@@ -173,4 +173,7 @@ a {
   position: relative;
   margin-top: 1.25rem;
 }
+.p-header__nav-main > li + li {
+  margin-left: 1.9rem;
+}
 /*# sourceMappingURL=style.css.map */
