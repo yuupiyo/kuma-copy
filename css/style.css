@@ -131,7 +131,7 @@ a {
 
 .p-header__inner {
   display: block;
-  height: 12.8rem;
+  height: min(29.76vw, 128px);
   padding: min(9.3vw, 40px) min(7.5vw, 42px) 0;
 }
 @media screen and (width >= 561px) {
@@ -144,7 +144,7 @@ a {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    height: 22rem;
+    height: min(17.18vw, 220px);
     padding: min(5vw, 64px) min(19.625vw, 251.2px) 0 min(7.8125vw, 100px);
   }
 }
