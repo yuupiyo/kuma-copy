@@ -21,9 +21,9 @@
 
 // ロゴ
 .p-header__logo {
-  width: 14.2rem;
+  width: min(33.02vw,142px);
   @include g.pc {
-    width: 14rem;
+    width: min(13.75vw,176px);
   }
   & a {
     display: block;
