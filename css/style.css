@@ -17,10 +17,28 @@ img {
   display: block;
 }
 
+.l-body {
+  position: relative;
+  width: 100%;
+  margin-top: 1.875rem;
+  color: #0b0b0b;
+  line-height: 1;
+  text-rendering: geometricPrecision;
+  text-decoration-thickness: 0.0625rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overscroll-behavior-y: none;
+}
+@media screen and (width >= 1024px) {
+  .l-body {
+    margin-top: 0;
+  }
+}
+
 .c-font {
   font-family: "Noto Sans JP", serif;
   font-optical-sizing: auto;
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
 }
 

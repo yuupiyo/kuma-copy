@@ -1,1 +1,17 @@
 @use "../foundation/global" as g;
+
+.l-body {
+  position: relative;
+  width: 100%;
+  margin-top: g.rem(30);
+  color: g.$color-dark;
+  line-height: 1;
+  text-rendering: geometricPrecision;
+  text-decoration-thickness: g.rem(1);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overscroll-behavior-y: none;
+  @include g.pc {
+    margin-top: 0;
+  }
+}
