@@ -15,7 +15,7 @@
     padding: min(5vw,64px) min(19.625vw,251.2px) 0 min(7.8125vw,100px);
   }
   @include g.l-pc {
-    padding: 8rem 31.4rem 0 10rem;
+    padding: g.rem(80) g.rem(314) 0 g.rem(100);
   }
 }
 
@@ -55,7 +55,7 @@
 .p-header__nav-main__item {
   display: flex;
   align-items: center;
-  gap: .5rem;
+  gap: g.rem(5);
   position: relative;
   padding: min(0.312vw,4px);
   margin: max(-0.312vw,-4px);
@@ -67,7 +67,7 @@
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   @include g.l-pc {
-    font-size: 2.6rem;
+    font-size: g.rem(26);
   }
   &::before {
     content: '';

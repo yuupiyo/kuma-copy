@@ -44,11 +44,11 @@ $l-pc:     1441px;
 }
 
 //pxをremに変換する関数
-// $root-size: 16; //htmlに設定してあるfont-size
+$root-size: 16; //htmlに設定してあるfont-size
 
-// @function rem($px) {
-//   @return math.div($px, $root-size) * 1rem;
-// }
+@function rem($px) {
+  @return math.div($px, $root-size) * 1rem;
+}
 
 //pxをvwに変換する関数
 //スマホver.
