@@ -8,7 +8,6 @@ html {
 
 body {
   width:      100vw;
-  background-color: #fff;
 }
 
 img {
@@ -16,4 +15,15 @@ img {
   height:    auto;
   border:    none;
   display:   block;
+}
+
+a {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  background: 0 0;
+  vertical-align: baseline;
+  cursor: pointer;
+  transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
 }

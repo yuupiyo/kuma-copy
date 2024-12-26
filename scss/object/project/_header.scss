@@ -15,3 +15,11 @@
     padding: g.rem(80) g.rem(314) 0 g.rem(100);
   }
 }
+
+// ロゴ
+.p-header__logo {
+  width: g.rem(142);
+  @include g.pc {
+    width: g.rem(140.797);
+  }
+}

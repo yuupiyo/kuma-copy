@@ -7,7 +7,6 @@ html {
 
 body {
   width: 100vw;
-  background-color: #fff;
 }
 
 img {
@@ -15,6 +14,17 @@ img {
   height: auto;
   border: none;
   display: block;
+}
+
+a {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  background: 0 0;
+  vertical-align: baseline;
+  cursor: pointer;
+  transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .l-body {
@@ -107,6 +117,15 @@ img {
 @media screen and (width >= 1441px) {
   .p-header__inner {
     padding: 5rem 19.625rem 0 6.25rem;
+  }
+}
+
+.p-header__logo {
+  width: 8.875rem;
+}
+@media screen and (width >= 1024px) {
+  .p-header__logo {
+    width: 8.7998125rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
