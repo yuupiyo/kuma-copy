@@ -1,1 +1,17 @@
 @use "../../foundation/global" as g;
+
+.p-header__inner {
+  display: block;
+  height: g.rem(128);
+  padding:  g.rem(40) calc( calc( 30 / 860 * calc( g.rem(7.68) * 100 )) * 1.5 ) 0;
+  @include g.pc {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: g.rem(220);
+    padding: calc(g.rem(64) * .8) calc(g.rem(252) * .8) 0 g.rem(80);
+  }
+  @include g.l-pc {
+    padding: g.rem(80) g.rem(314) 0 g.rem(100);
+  }
+}

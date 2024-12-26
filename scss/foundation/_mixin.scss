@@ -5,6 +5,7 @@
 $sp:     375px;
 $tablet: 768px;
 $pc:     1024px;
+$l-pc:     1441px;
 
 //タブレットサイズ以上しかスタイリングしない時に使う
 @mixin sp {
@@ -23,6 +24,13 @@ $pc:     1024px;
 //pcサイズのみしかスタイリングしない時に使う
 @mixin pc {
   @media screen and (width >= $pc) {
+    @content;
+  }
+}
+
+//画面幅広めのpcサイズのみしかスタイリングしない時に使う
+@mixin l-pc {
+  @media screen and (width >= $l-pc) {
     @content;
   }
 }
@@ -51,7 +59,11 @@ $tb-viewport: 768; //デザインカンプの画面幅
 
 //パソコンver.
 $pc-viewport: 1023; //デザインカンプの画面幅
+$l-pc-viewport: 1440;
 
 @function pc-vw($num, $width:$pc-viewport) {
+  @return(1vw * $num/$width * 100);
+}
+@function l-pc-vw($num, $width:$l-pc-viewport) {
   @return(1vw * $num/$width * 100);
 }

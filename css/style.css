@@ -89,4 +89,24 @@ img {
   font-weight: 700;
   font-style: normal;
 }
+
+.p-header__inner {
+  display: block;
+  height: 8rem;
+  padding: 2.5rem 2.511627907rem 0;
+}
+@media screen and (width >= 1024px) {
+  .p-header__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 13.75rem;
+    padding: 3.2rem 12.6rem 0 5rem;
+  }
+}
+@media screen and (width >= 1441px) {
+  .p-header__inner {
+    padding: 5rem 19.625rem 0 6.25rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
