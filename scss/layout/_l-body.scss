@@ -28,7 +28,7 @@
     opacity: .2;
     z-index: -1;
     pointer-events: none;
-    transition: all 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
     @include g.pc {
       background-size: g.rem(4) g.rem(4);
     }
