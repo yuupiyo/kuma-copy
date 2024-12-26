@@ -40,9 +40,9 @@
 }
 .p-header__nav-main {
   position: relative;
-  margin-top: 2rem;
+  margin-top: min(1.95vw,25px);
   & > li+li {
-    margin-left: 3.04rem;
+    margin-left: min(2.968vw,38px);
   }
 }
 .p-header__nav-main__item {
