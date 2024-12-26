@@ -35,7 +35,7 @@
   @include g.pc {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: -1.6rem;
+    margin-top: max(-0.156vw,-2px);
   }
 }
 .p-header__nav-main {
