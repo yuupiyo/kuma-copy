@@ -22,4 +22,7 @@
   @include g.pc {
     width: g.rem(140.797);
   }
+  & a {
+    display: block;
+  }
 }

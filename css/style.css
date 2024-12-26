@@ -128,4 +128,7 @@ a {
     width: 8.7998125rem;
   }
 }
+.p-header__logo a {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
