@@ -104,6 +104,12 @@ a {
   }
 }
 
+.c-flex__nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .c-font {
   font-family: "Noto Sans JP", serif;
   font-optical-sizing: auto;
@@ -161,5 +167,10 @@ a {
     flex-direction: column-reverse;
     margin-top: -0.1rem;
   }
+}
+
+.p-header__nav-main {
+  position: relative;
+  margin-top: 1.25rem;
 }
 /*# sourceMappingURL=style.css.map */
