@@ -2,13 +2,13 @@
 
 .p-header__inner {
   display: block;
-  height: g.rem(128);
-  padding:  g.rem(40) calc( calc( 30 / 860 * calc( g.rem(10.23) * 100 )) * 1.5 ) 0;
+  height: 18rem;
+  padding:  min(3.91vw,40px) min(5.232vw,53.5291px) 0;
   @include g.pc {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    height: g.rem(220);
+    height: 22rem;
     padding: clamp(3.2rem, 1.231rem + 3.08vw, 4rem) clamp(12.56rem, 4.831rem + 12.08vw, 15.7rem) 0 clamp(5rem, 1.923rem + 4.81vw, 6.25rem);
   }
   @include g.l-pc {

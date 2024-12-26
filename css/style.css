@@ -1,6 +1,6 @@
 html {
   height: 100vh;
-  font-size: 16px;
+  font-size: 62.5%;
   line-height: 1.6;
   scroll-behavior: smooth;
 }
@@ -131,15 +131,15 @@ a {
 
 .p-header__inner {
   display: block;
-  height: 8rem;
-  padding: 2.5rem 3.3455668605rem 0;
+  height: 18rem;
+  padding: min(3.91vw, 40px) min(5.232vw, 53.5291px) 0;
 }
 @media screen and (width >= 1024px) {
   .p-header__inner {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    height: 13.75rem;
+    height: 22rem;
     padding: clamp(3.2rem, 1.231rem + 3.08vw, 4rem) clamp(12.56rem, 4.831rem + 12.08vw, 15.7rem) 0 clamp(5rem, 1.923rem + 4.81vw, 6.25rem);
   }
 }
