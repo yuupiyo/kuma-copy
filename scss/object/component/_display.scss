@@ -1,1 +1,16 @@
 @use "../../foundation/global" as g;
+
+// spサイズのみ
+.c-display__sponly {
+  display: block;
+  @include g.pc {
+    display: none;
+  }
+}
+// pcサイズのみ
+.c-display__pconly {
+  display: none;
+  @include g.pc {
+    display: block;
+  }
+}

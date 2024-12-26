@@ -86,6 +86,24 @@ a {
   }
 }
 
+.c-display__sponly {
+  display: block;
+}
+@media screen and (width >= 1024px) {
+  .c-display__sponly {
+    display: none;
+  }
+}
+
+.c-display__pconly {
+  display: none;
+}
+@media screen and (width >= 1024px) {
+  .c-display__pconly {
+    display: block;
+  }
+}
+
 .c-font {
   font-family: "Noto Sans JP", serif;
   font-optical-sizing: auto;
