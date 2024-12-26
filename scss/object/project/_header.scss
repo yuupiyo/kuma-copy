@@ -12,15 +12,15 @@
     padding: clamp(3.2rem, 1.231rem + 3.08vw, 4rem) clamp(12.56rem, 4.831rem + 12.08vw, 15.7rem) 0 clamp(5rem, 1.923rem + 4.81vw, 6.25rem);
   }
   @include g.l-pc {
-    padding: g.rem(80) g.rem(314) 0 g.rem(100);
+    padding: 8rem 31.4rem 0 10rem;
   }
 }
 
 // ロゴ
 .p-header__logo {
-  width: g.rem(142);
+  width: 14.2rem;
   @include g.pc {
-    width: g.rem(140.797);
+    width: 14rem;
   }
   & a {
     display: block;
@@ -32,14 +32,14 @@
   @include g.pc {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: g.rem(-1.6);
+    margin-top: -1.6rem;
   }
 }
 .p-header__nav-main {
   position: relative;
-  margin-top: g.rem(20);
+  margin-top: 2rem;
   & > li+li {
-    margin-left: g.rem(30.4);
+    margin-left: 3.04rem;
   }
 }
 .p-header__nav-main__item {
@@ -47,8 +47,8 @@
   align-items: center;
   gap: .5rem;
   position: relative;
-  padding: g.rem(3.2);
-  margin: g.rem(-3.2);
+  padding: 0.32rem;
+  margin: -0.32rem;
   font-weight: 700;
   font-style: normal;
   font-size: clamp(1rem, 0.385rem + 0.96vw, 1.25rem);

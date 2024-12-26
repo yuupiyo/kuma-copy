@@ -3,11 +3,11 @@
 .l-body {
   position: relative;
   width: 100%;
-  margin-top: g.rem(30);
+  margin-top: 3rem;
   color: g.$color-dark;
   line-height: 1;
   text-rendering: geometricPrecision;
-  text-decoration-thickness: g.rem(1);
+  text-decoration-thickness: 0.1rem;
   overflow-x: hidden;
   overflow-y: scroll;
   overscroll-behavior-y: none;
@@ -24,13 +24,13 @@
     height: 100%;
     background-image: url(../../img/bg/bg_dot.svg);
     background-repeat: repeat;
-    background-size: g.rem(2) g.rem(2);
+    background-size: 0.2rem 0.2rem;
     opacity: .2;
     z-index: -1;
     pointer-events: none;
     transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
     @include g.pc {
-      background-size: g.rem(4) g.rem(4);
+      background-size: 0.4rem 0.4rem;
     }
   }
 }
