@@ -42,3 +42,18 @@
     margin-left: g.rem(30.4);
   }
 }
+.p-header__nav-main__item {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  position: relative;
+  padding: g.rem(3.2);
+  margin: g.rem(-3.2);
+  font-weight: 700;
+  font-style: normal;
+  font-size: clamp(1rem, 0.385rem + 0.96vw, 1.25rem);
+  color: g.$color-dark;
+  z-index: 0;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
