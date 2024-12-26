@@ -132,7 +132,7 @@ a {
 .p-header__inner {
   display: block;
   height: 8rem;
-  padding: 2.5rem 2.511627907rem 0;
+  padding: 2.5rem 3.3455668605rem 0;
 }
 @media screen and (width >= 1024px) {
   .p-header__inner {
@@ -140,7 +140,7 @@ a {
     align-items: flex-start;
     justify-content: space-between;
     height: 13.75rem;
-    padding: 3.2rem 12.6rem 0 5rem;
+    padding: clamp(3.2rem, 1.231rem + 3.08vw, 4rem) clamp(12.56rem, 4.831rem + 12.08vw, 15.7rem) 0 clamp(5rem, 1.923rem + 4.81vw, 6.25rem);
   }
 }
 @media screen and (width >= 1441px) {
