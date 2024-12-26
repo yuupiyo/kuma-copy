@@ -154,4 +154,12 @@ a {
 .p-header__logo a {
   display: block;
 }
+
+@media screen and (width >= 1024px) {
+  .p-header__nav {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: -0.1rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

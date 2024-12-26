@@ -26,3 +26,12 @@
     display: block;
   }
 }
+
+// ナビゲーション
+.p-header__nav {
+  @include g.pc {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: g.rem(-1.6);
+  }
+}
