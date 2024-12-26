@@ -16,6 +16,11 @@ img {
   display: block;
 }
 
+picture {
+  display: block;
+  max-width: 100%;
+}
+
 a {
   font-size: inherit;
   font-weight: inherit;
