@@ -1,1 +1,41 @@
 @use "../../foundation/global" as g;
+
+// 背景黒の＋マークのアイコン
+.c-icon__plus {
+  display: block;
+  position: relative;
+  letter-spacing: 0;
+  line-height: 0;
+  border-radius: 50%;
+  background-color: g.$color-black;
+  transition: 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition-property: background-color, transform, -webkit-transform;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: g.rem(10);
+    height: g.rem(2);
+    background-color: g.$color-white;
+    transform: translate(-50%, -50%) rotate(.00001deg);
+  }
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: g.rem(2);
+    height: g.rem(10);
+    background-color: g.$color-white;
+    transform: translate(-50%, -50%) rotate(.00001deg);
+    transition: all 0.27s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+}
+.c-icon__plus--medium {
+  @extend .c-icon__plus;
+  width: min(1.718vw,22px);
+  height: min(1.718vw,22px);
+}
