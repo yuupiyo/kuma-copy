@@ -259,15 +259,4 @@ a {
   z-index: -1;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-
-@media (any-hover: hover) {
-  .p-header__nav-main__item:hover {
-    color: #ffffff;
-  }
-  .p-header__nav-main__item:hover::before {
-    left: 0;
-    right: auto;
-    width: 100%;
-  }
-}
 /*# sourceMappingURL=style.css.map */

@@ -59,19 +59,27 @@ $sp-viewport: 375; //デザインカンプの画面幅
 }
 
 //タブレットver.
-$tb-viewport: 768; //デザインカンプの画面幅
+$s-tb-viewport: 561; //デザインカンプの画面幅
+$tb-viewport: 768; 
 
+@function s-tb-vw($num, $width:$s-tb-viewport) {
+  @return(1vw * $num/$width * 100);
+}
 @function tb-vw($num, $width:$tb-viewport) {
   @return(1vw * $num/$width * 100);
 }
 
 //パソコンver.
-$pc-viewport: 1023; //デザインカンプの画面幅
-$l-pc-viewport: 1440;
+$pc-viewport: 1024; //デザインカンプの画面幅
+$l-pc-viewport: 1380;
+$xl-pc-viewport: 1441;
 
 @function pc-vw($num, $width:$pc-viewport) {
   @return(1vw * $num/$width * 100);
 }
 @function l-pc-vw($num, $width:$l-pc-viewport) {
+  @return(1vw * $num/$width * 100);
+}
+@function xl-pc-vw($num, $width:$xl-pc-viewport) {
   @return(1vw * $num/$width * 100);
 }
