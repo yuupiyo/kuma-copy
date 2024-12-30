@@ -36,6 +36,6 @@
 }
 .c-icon__plus--medium {
   @extend .c-icon__plus;
-  width: min(1.718vw,22px);
-  height: min(1.718vw,22px);
+  width: min(g.pc-vw(17.594),22px);
+  height: min(g.pc-vw(17.594),22px);
 }

@@ -2,17 +2,17 @@
 
 .p-header__inner {
   display: block;
-  height: min(29.76vw,128px);
-  padding: min(9.3vw,40px) min(7.5vw,42px) 0;
+  height: min(g.sp-vw(111.63),128px);
+  padding: min(g.sp-vw(34.884),40px) min(g.sp-vw(28.125),42px) 0;
   @include g.s-tablet {
-    padding: min(5.215vw,40px) min(5.232vw,53.529px) 0;
+    padding: min(g.s-tb-vw(29.257),40px) min(g.s-tb-vw(29.335),53.529px) 0;
   }
   @include g.pc {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    height: min(17.18vw,220px);
-    padding: min(5vw,64px) min(19.625vw,251.2px) 0 min(7.8125vw,100px);
+    height: min(g.pc-vw(176),220px);
+    padding: min(g.pc-vw(51.2),64px) min(g.pc-vw(200.96),251.2px) 0 min(g.pc-vw(80),100px);
   }
   @include g.l-pc {
     padding: g.rem(80) g.rem(314) 0 g.rem(100);
@@ -21,9 +21,9 @@
 
 // ロゴ
 .p-header__logo {
-  width: min(33.02vw,142px);
+  width: min(g.sp-vw(123.84),142px);
   @include g.pc {
-    width: min(13.75vw,176px);
+    width: min(g.pc-vw(140.8),176px);
   }
   & a {
     display: block;
@@ -42,14 +42,14 @@
   @include g.pc {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: max(-0.156vw,-2px);
+    margin-top: max(g.pc-vw(-1.6),-2px);
   }
 }
 .p-header__nav-main {
   position: relative;
-  margin-top: min(1.95vw,25px);
+  margin-top: min(g.pc-vw(20),25px);
   & > li+li {
-    margin-left: min(2.968vw,38px);
+    margin-left: min(g.pc-vw(30.4),38px);
   }
 }
 .p-header__nav-main__item {
@@ -57,8 +57,8 @@
   align-items: center;
   gap: g.rem(5);
   position: relative;
-  padding: min(0.312vw,4px);
-  margin: max(-0.312vw,-4px);
+  padding: min(g.pc-vw(3.2),4px);
+  margin: max(g.pc-vw(-3.2),-4px);
   font-weight: 700;
   font-style: normal;
   font-size: min(1.562vw,20px);
