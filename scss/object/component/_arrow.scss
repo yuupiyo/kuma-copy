@@ -1,1 +1,16 @@
 @use "../../foundation/global" as g;
+
+.c-arrow {
+  // 共通スタイル
+  display: block;
+  color: g.$color-red;
+  background-color: currentColor;
+  clip-path: polygon(0 0, 0 100%, 100% 49%);
+
+  // 一番小さいサイズ
+  &__01 {
+    @extend .c-arrow;
+    width: min(g.pc-vw(6.398),8px);
+    height: min(g.pc-vw(4.797),6px);
+  }
+}

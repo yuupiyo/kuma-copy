@@ -99,3 +99,6 @@
   font-size: min(g.pc-vw(13),16px);
   color: g.$color-dark;
 }
+.p-header__nav-sub__arrow {
+  margin-top: min(g.pc-vw(0.8),1px);
+}
