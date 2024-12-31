@@ -292,4 +292,8 @@ a {
 .p-header__nav-sub__arrow {
   margin-top: min(0.078125vw, 1px);
 }
+
+.p-header__nav-sub__text {
+  margin-left: min(0.78125vw, 10px);
+}
 /*# sourceMappingURL=style.css.map */
