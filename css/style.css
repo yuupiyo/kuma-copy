@@ -269,4 +269,12 @@ a {
 .p-header__nav-sub > li + li {
   margin-left: min(2.34375vw, 30px);
 }
+
+.p-header__nav-sub__item {
+  display: flex;
+  align-items: center;
+  font-size: min(1.26953125vw, 16px);
+  font-weight: 700;
+  color: #0b0b0b;
+}
 /*# sourceMappingURL=style.css.map */
