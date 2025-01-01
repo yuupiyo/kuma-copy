@@ -106,3 +106,24 @@
   margin-left: min(g.pc-vw(8),10px);
   font-weight: 700;
 }
+// sub-nav:hover時
+@media (any-hover: hover) {
+  .p-header__nav-sub__item:hover {
+    color: g.$color-red;
+    & .p-header__nav-sub__arrow {
+      animation: calc(0.18s * 5) steps(2) arrow infinite;
+    }
+  }
+}
+// 矢印のアニメーション
+@keyframes arrow {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}

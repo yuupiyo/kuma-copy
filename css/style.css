@@ -297,4 +297,36 @@ a {
   margin-left: min(0.78125vw, 10px);
   font-weight: 700;
 }
+
+@media (any-hover: hover) {
+  .p-header__nav-sub__item:hover {
+    color: #e9352c;
+  }
+  .p-header__nav-sub__item:hover .p-header__nav-sub__arrow {
+    -webkit-animation: 0.9s steps(2) arrow infinite;
+            animation: 0.9s steps(2) arrow infinite;
+  }
+}
+@-webkit-keyframes arrow {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes arrow {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
 /*# sourceMappingURL=style.css.map */
