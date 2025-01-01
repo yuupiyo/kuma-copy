@@ -157,3 +157,27 @@
   background-color: g.$color-white;
   z-index: 4;
 }
+.p-header__nav-sub__button__icon {
+  display: block;
+  position: absolute;
+  top: max(g.pc-vw(-2.56),-3.2px);
+  left: min(g.pc-vw(8.96),11.2px);
+  width: min(g.pc-vw(23.04),28.8px);
+  height: min(g.pc-vw(24.31),30.4px);
+  background-image: url(../../../img/top/book.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: min(g.pc-vw(0.8),1px);
+    left: 25%;
+    width: 50%;
+    height: 30%;
+    background-color: g.$color-white;
+    z-index: -1;
+    transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+}
