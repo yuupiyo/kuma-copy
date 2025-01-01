@@ -89,7 +89,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  & > li+li {
+  & > li+li:not(.p-header__nav-sub__button) {
     margin-left: min(g.pc-vw(24),30px);
   }
 }
@@ -125,5 +125,24 @@
   }
   100% {
     transform: translate3d(0, 0, 0);
+  }
+}
+
+// 「実例で分かるコーディング用語」部分
+.p-header__nav-sub__button {
+  position: relative;
+  width: min(g.pc-vw(201.594),252px);
+  height: min(g.pc-vw(30.72),38.4px);
+  margin-left: min(g.pc-vw(24.32),30.4px);
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: max(g.pc-vw(-3.2),-4px);
+    right: max(g.pc-vw(-3.2),-4px);
+    width: 100%;
+    height: 100%;
+    background-color: g.$color-gray07;
+    z-index: 3;
   }
 }
