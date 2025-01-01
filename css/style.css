@@ -295,5 +295,6 @@ a {
 
 .p-header__nav-sub__text {
   margin-left: min(0.78125vw, 10px);
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
