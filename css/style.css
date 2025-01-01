@@ -389,4 +389,18 @@ a {
   width: min(14.1865234375vw, 181.6px);
   transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
+@media (any-hover: hover) {
+  .p-header__nav-sub__button a:hover {
+    background-color: #e9352c;
+    border-color: #e9352c;
+    transform: translate3d(0.25rem, 0.25rem, 0);
+  }
+  .p-header__nav-sub__button a:hover .p-header__nav-sub__button__icon::before {
+    background-color: #e9352c;
+  }
+  .p-header__nav-sub__button a:hover .p-header__nav-sub__button__text {
+    filter: brightness(0) invert(1);
+  }
+}
 /*# sourceMappingURL=style.css.map */
