@@ -181,3 +181,8 @@
     transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
 }
+.p-header__nav-sub__button__text {
+  position: relative;
+  width: min(g.pc-vw(145.27),181.6px);
+  transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
