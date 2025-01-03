@@ -543,4 +543,27 @@ a {
   z-index: 1000000010;
   overflow: hidden;
 }
+
+.p-header__hamburger__icon {
+  position: relative;
+  z-index: 1;
+}
+.p-header__hamburger__icon span {
+  display: block;
+  width: min(13.952vw, 60px);
+  height: 0.1875rem;
+  background-color: #ffffff;
+  transition-property: opacity, transform;
+  transition: 0.5s cubic-bezier(0.42, -0.32, 0.24, 1.36);
+}
+.p-header__hamburger__icon span:nth-of-type(2) {
+  margin: min(1.1626666667vw, 5rem) 0;
+}
+
+.p-header__hamburger__text {
+  position: relative;
+  width: min(13.952vw, 60px);
+  margin-top: min(2.3256vw, 10px);
+  z-index: 1;
+}
 /*# sourceMappingURL=style.css.map */

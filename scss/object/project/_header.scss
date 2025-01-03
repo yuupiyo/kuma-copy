@@ -323,3 +323,24 @@
   z-index: 1000000010;
   overflow: hidden;
 }
+.p-header__hamburger__icon {
+  position: relative;
+  z-index: 1;
+  & span {
+    display: block;
+    width: min(g.sp-vw(52.320),60px);
+    height: g.rem(3);
+    background-color: g.$color-white;
+    transition-property: opacity, transform;
+    transition: 0.5s cubic-bezier(.42,-0.32,.24,1.36);
+  }
+  & span:nth-of-type(2) {
+    margin: min(g.sp-vw(4.36),5rem) 0;
+  }
+}
+.p-header__hamburger__text {
+  position: relative;
+  width: min(g.sp-vw(52.320),60px);
+  margin-top: min(g.sp-vw(8.721),10px);
+  z-index: 1;
+}
