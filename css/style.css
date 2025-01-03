@@ -508,4 +508,22 @@ a {
   transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition-property: opacity, transform;
 }
+
+@media (any-hover: hover) {
+  .p-header__contact a:hover::after {
+    opacity: 0;
+  }
+  .p-header__contact a:hover .p-header__contact__object::before {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition-delay: 0.1s;
+    transition: 0.45s cubic-bezier(1, 0, 0, 1);
+  }
+  .p-header__contact a:hover .p-header__contact__object::after {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.3s;
+    transition: 0.45s cubic-bezier(1, 0, 0, 1);
+  }
+}
 /*# sourceMappingURL=style.css.map */
