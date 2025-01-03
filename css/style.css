@@ -451,4 +451,16 @@ a {
   width: min(7.5771484375vw, 97px);
   z-index: 2;
 }
+
+.p-header__contact__text {
+  position: relative;
+  margin-top: min(0.9375vw, 12px);
+  padding-top: 0.00625rem;
+  padding-bottom: 0.00625rem;
+  font-size: min(3.3203125vw, 42px);
+  color: #ffffff;
+  line-height: 1.0952380952em;
+  letter-spacing: 0.25em;
+  z-index: 2;
+}
 /*# sourceMappingURL=style.css.map */

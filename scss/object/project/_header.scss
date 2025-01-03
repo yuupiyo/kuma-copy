@@ -229,3 +229,14 @@
   width: min(g.pc-vw(77.59),97px);
   z-index: 2;
 }
+.p-header__contact__text {
+  position: relative;
+  margin-top: min(g.pc-vw(9.6),12px);
+  padding-top: g.rem(0.1);
+  padding-bottom: g.rem(0.1);
+  font-size: min(g.pc-vw(34),42px);
+  color: g.$color-white;
+  line-height: calc(calc( 46 / 42 )* 1em);
+  letter-spacing: calc(250 / 1000* 1em);
+  z-index: 2;
+}
