@@ -445,4 +445,10 @@ a {
   z-index: 0;
   overflow: hidden;
 }
+
+.p-header__contact__time {
+  position: relative;
+  width: min(7.5771484375vw, 97px);
+  z-index: 2;
+}
 /*# sourceMappingURL=style.css.map */

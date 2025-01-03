@@ -224,3 +224,8 @@
     overflow: hidden;
   }
 }
+.p-header__contact__time {
+  position: relative;
+  width: min(g.pc-vw(77.59),97px);
+  z-index: 2;
+}
