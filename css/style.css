@@ -201,6 +201,23 @@ a {
   height: min(1.7181640625vw, 22px);
 }
 
+.p-chatwork {
+  position: fixed;
+  bottom: min(4.6512vw, 20px);
+  left: 18.75px;
+  width: 257.5px;
+  z-index: 100000000;
+}
+@media screen and (width >= 1024px) {
+  .p-chatwork {
+    top: min(18.75vw, 240px);
+    bottom: unset;
+    left: unset;
+    right: 0;
+    width: min(16.40625vw, 210px);
+  }
+}
+
 .p-header__inner {
   display: block;
   height: min(29.768vw, 128px);
@@ -542,6 +559,11 @@ a {
   border-radius: 0 0 0 1.5625rem;
   z-index: 1000000010;
   overflow: hidden;
+}
+@media screen and (width >= 1024px) {
+  .p-header__hamburger {
+    display: none;
+  }
 }
 
 .p-header__hamburger__icon {

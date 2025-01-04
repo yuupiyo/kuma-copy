@@ -322,6 +322,9 @@
   border-radius: 0 0 0 g.rem(25);
   z-index: 1000000010;
   overflow: hidden;
+  @include g.pc {
+    display: none;
+  }
 }
 .p-header__hamburger__icon {
   position: relative;

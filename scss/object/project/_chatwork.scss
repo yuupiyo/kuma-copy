@@ -1,0 +1,16 @@
+@use "../../foundation/global" as g;
+
+.p-chatwork {
+  position: fixed;
+  bottom: min(g.sp-vw(17.442),20px);
+  left: calc( 43 / 860 * calc( 3.75px * 100 ));
+  width: calc(calc( 774 / 860 * calc( 3.75px * 100 )) - 80px);
+  z-index: 100000000;
+  @include g.pc {
+    top: min(g.pc-vw(192),240px);
+    bottom: unset;
+    left: unset;
+    right: 0;
+    width: min(g.pc-vw(168),210px);
+  }
+}
