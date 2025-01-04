@@ -68,3 +68,15 @@
     }
   }
 }
+
+// hover時
+@media (any-hover: hover) {
+  .p-chatwork a:hover {
+    color: g.$color-white;
+    background-color: g.$color-red;
+    transform: translate3d(0, g.rem(4), 0);
+    & .p-chatwork__logo {
+      filter: brightness(0) invert(1);
+    }
+  }
+}
