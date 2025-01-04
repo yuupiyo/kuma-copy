@@ -248,6 +248,7 @@ a {
 }
 @media screen and (width >= 1024px) {
   .p-chatwork a {
+    justify-content: flex-start;
     padding: min(1.09375vw, 14px) 0 min(1.09375vw, 14px) min(2.03125vw, 26px);
     border: none;
     border-radius: 6.25rem 0 0 6.25rem;
@@ -261,6 +262,25 @@ a {
 @media screen and (width >= 1024px) {
   .p-chatwork__logo {
     width: min(8.2809570312vw, 106px);
+  }
+}
+
+.p-chatwork__text {
+  margin-left: min(0.6976vw, 3px);
+  font-size: min(4.5333333333vw, 19px);
+}
+@media screen and (width >= 1024px) {
+  .p-chatwork__text {
+    margin-left: min(0.3125vw, 4px);
+    font-size: min(1.46484375vw, 18px);
+  }
+}
+.p-chatwork__text > span {
+  display: inline-block;
+}
+@media screen and (width >= 1024px) {
+  .p-chatwork__text > span {
+    display: none;
   }
 }
 

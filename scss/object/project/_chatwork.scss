@@ -40,6 +40,7 @@
     z-index: 1;
     overflow: hidden;
     @include g.pc {
+      justify-content: flex-start;
       padding: min(g.pc-vw(11.2),14px) 0 min(g.pc-vw(11.2),14px) min(g.pc-vw(20.8),26px);
       border: none;
       border-radius: g.rem(100) 0 0 g.rem(100);
@@ -51,5 +52,19 @@
   transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
   @include g.pc {
     width: min(g.pc-vw(84.797),106px);
+  }
+}
+.p-chatwork__text {
+  margin-left: min(g.sp-vw(2.616),3px);
+  font-size: min(g.sp-vw(17),19px);
+  @include g.pc {
+    margin-left: min(g.pc-vw(3.2),4px);
+    font-size: min(g.pc-vw(15),18px);
+  }
+  & > span {
+    display: inline-block;
+    @include g.pc {
+      display: none;
+    }
   }
 }
