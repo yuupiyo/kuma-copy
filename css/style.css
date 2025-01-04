@@ -87,6 +87,18 @@ a {
   }
 }
 
+.l-wrapper {
+  position: relative;
+  z-index: 10;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+@media screen and (width >= 1024px) {
+  .l-wrapper {
+    position: static;
+  }
+}
+
 .c-arrow, .c-arrow__01 {
   display: block;
   color: #e9352c;
