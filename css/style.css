@@ -254,6 +254,16 @@ a {
   }
 }
 
+.p-chatwork__logo {
+  width: min(28.1376vw, 121px);
+  transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+@media screen and (width >= 1024px) {
+  .p-chatwork__logo {
+    width: min(8.2809570312vw, 106px);
+  }
+}
+
 .p-header__inner {
   display: block;
   height: min(29.768vw, 128px);

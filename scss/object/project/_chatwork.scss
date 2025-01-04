@@ -46,3 +46,10 @@
     }
   }
 }
+.p-chatwork__logo {
+  width: min(g.sp-vw(105.516),121px);
+  transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  @include g.pc {
+    width: min(g.pc-vw(84.797),106px);
+  }
+}
