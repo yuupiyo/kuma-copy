@@ -140,12 +140,30 @@ a {
   }
 }
 
+.c-display__sponly--inline {
+  display: inline-block;
+}
+@media screen and (width >= 1024px) {
+  .c-display__sponly--inline {
+    display: none;
+  }
+}
+
 .c-display__pconly {
   display: none;
 }
 @media screen and (width >= 1024px) {
   .c-display__pconly {
     display: block;
+  }
+}
+
+.c-display__pconly--inline {
+  display: none;
+}
+@media screen and (width >= 1024px) {
+  .c-display__pconly--inline {
+    display: inline-block;
   }
 }
 
@@ -285,14 +303,6 @@ a {
   .p-chatwork__text {
     margin-left: min(0.3125vw, 4px);
     font-size: min(1.46484375vw, 18px);
-  }
-}
-.p-chatwork__text > span {
-  display: inline-block;
-}
-@media screen and (width >= 1024px) {
-  .p-chatwork__text > span {
-    display: none;
   }
 }
 

@@ -61,12 +61,6 @@
     margin-left: min(g.pc-vw(3.2),4px);
     font-size: min(g.pc-vw(15),18px);
   }
-  & > span {
-    display: inline-block;
-    @include g.pc {
-      display: none;
-    }
-  }
 }
 
 // hover時

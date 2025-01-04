@@ -7,10 +7,22 @@
     display: none;
   }
 }
+.c-display__sponly--inline {
+  display: inline-block;
+  @include g.pc{
+    display: none;
+  }
+}
 // pcサイズのみ
 .c-display__pconly {
   display: none;
   @include g.pc {
     display: block;
+  }
+}
+.c-display__pconly--inline {
+  display: none;
+  @include g.pc {
+    display: inline-block;
   }
 }
