@@ -13,4 +13,36 @@
     right: 0;
     width: min(g.pc-vw(168),210px);
   }
+  &::before {
+    content: none;
+    @include g.pc {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: max(g.pc-vw(-3.2),-4px);
+      width: 100%;
+      height: 100%;
+      border-radius: g.rem(100) 0 0 g.rem(100);
+      background-color: g.$color-gray09;
+      z-index: -1;
+    }
+  }
+  & a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: min(g.sp-vw(11.337),13px) 0;
+    background-color: g.$color-white;
+    border-radius: 100px;
+    border: solid g.rem(3) g.$color-dark;
+    z-index: 1;
+    overflow: hidden;
+    @include g.pc {
+      padding: min(g.pc-vw(11.2),14px) 0 min(g.pc-vw(11.2),14px) min(g.pc-vw(20.8),26px);
+      border: none;
+      border-radius: g.rem(100) 0 0 g.rem(100);
+    }
+  }
 }
