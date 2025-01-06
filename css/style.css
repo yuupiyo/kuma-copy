@@ -686,4 +686,20 @@ a {
   margin-top: min(2.3256vw, 10px);
   z-index: 1;
 }
+
+.p-hero {
+  position: relative;
+  max-height: 87.875rem;
+  min-height: 48.9375rem;
+  background-color: #d3d2d8;
+  border-bottom: solid 0.1875rem;
+  z-index: 10000;
+  overflow: hidden;
+}
+@media screen and (width >= 768px) {
+  .p-hero {
+    max-height: unset;
+    min-height: unset;
+  }
+}
 /*# sourceMappingURL=style.css.map */

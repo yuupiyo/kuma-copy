@@ -1,1 +1,15 @@
 @use "../../foundation/global" as g;
+
+.p-hero {
+  position: relative;
+  max-height: g.rem(1406);
+  min-height: g.rem(783);
+  background-color: g.$color-gray06;
+  border-bottom: solid g.rem(3);
+  z-index: 10000;
+  overflow: hidden;
+  @include g.tablet {
+    max-height: unset;
+    min-height: unset;
+  }
+}
