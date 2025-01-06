@@ -4,7 +4,7 @@
   position: fixed;
   bottom: min(g.sp-vw(17.442),20px);
   left: calc( 43 / 860 * calc( 3.75px * 100 ));
-  width: calc(calc( 774 / 860 * calc( 3.75px * 100 )) - 80px);
+  width: min(g.sp-vw(257.5),871.625px);
   z-index: 100000000;
   @include g.pc {
     top: min(g.pc-vw(192),240px);

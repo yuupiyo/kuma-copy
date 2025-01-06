@@ -235,7 +235,7 @@ a {
   position: fixed;
   bottom: min(4.6512vw, 20px);
   left: 18.75px;
-  width: 257.5px;
+  width: min(68.6666666667vw, 871.625px);
   z-index: 100000000;
 }
 @media screen and (width >= 1024px) {
