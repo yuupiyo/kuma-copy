@@ -702,4 +702,11 @@ a {
     min-height: unset;
   }
 }
+
+.p-hero__kv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
 /*# sourceMappingURL=style.css.map */
