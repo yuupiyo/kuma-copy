@@ -696,12 +696,6 @@ a {
   z-index: 10000;
   overflow: hidden;
 }
-@media screen and (width >= 768px) {
-  .p-hero {
-    max-height: unset;
-    min-height: unset;
-  }
-}
 
 .p-hero__kv {
   position: absolute;
@@ -751,6 +745,25 @@ a {
   background-repeat: repeat;
   pointer-events: none;
   z-index: 0;
+}
+
+.p-hero__kv-catch {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(83.2533333333vw, 358px);
+  height: min(36.1013333333vw, 249.92px);
+  top: min(45.7728vw, 316.609px);
+  text-align: center;
+  z-index: 2;
+}
+@media screen and (width >= 768px) {
+  .p-hero__kv-catch {
+    width: min(47.734375vw, 716px);
+    height: min(22.265625vw, 333.56px);
+    top: min(21.7325520833vw, 324.594px);
+    z-index: 100;
+  }
 }
 
 .p-hero__kv-slider__contents li {

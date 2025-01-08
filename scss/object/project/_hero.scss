@@ -8,10 +8,10 @@
   border-bottom: solid g.rem(3);
   z-index: 10000;
   overflow: hidden;
-  @include g.tablet {
-    max-height: unset;
-    min-height: unset;
-  }
+  // @include g.tablet {
+  //   max-height: unset;
+  //   min-height: unset;
+  // }
 }
 .p-hero__kv {
   position: absolute;
@@ -60,6 +60,22 @@
     background-repeat: repeat;
     pointer-events: none;
     z-index: 0;
+  }
+}
+.p-hero__kv-catch {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(g.sp-vw(312.2),358px);
+  height: min(g.sp-vw(135.38),249.92px);
+  top: min(g.sp-vw(171.648),316.609px);
+  text-align: center;
+  z-index: 2;
+  @include g.tablet{
+    width: min(g.tb-vw(366.6),716px);
+    height: min(g.tb-vw(171),333.56px);
+    top: min(g.tb-vw(166.906),324.594px);
+    z-index: 100;
   }
 }
 
