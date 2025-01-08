@@ -20,11 +20,15 @@
 }
 .p-about__title {
   position: relative;
+  padding-top: g.rem(0.1);
+  padding-bottom: g.rem(0.1);
   font-size: min(g.sp-vw(31),36px);
+  line-height: calc(calc( 102 / 72 )* 1em);
   z-index: 1;
   white-space: nowrap;
   @include g.s-tablet {
     font-size: min(g.s-tb-vw(37),50px);
+    line-height: calc(calc( 100 / 70 )* 1em);
   }
   @include g.pc {
     font-size: min(g.pc-vw(56),70px)

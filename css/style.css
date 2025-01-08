@@ -264,13 +264,17 @@ a {
 
 .p-about__title {
   position: relative;
+  padding-top: 0.00625rem;
+  padding-bottom: 0.00625rem;
   font-size: min(8.2666666667vw, 36px);
+  line-height: 1.4166666667em;
   z-index: 1;
   white-space: nowrap;
 }
 @media screen and (width >= 561px) {
   .p-about__title {
     font-size: min(6.5953654189vw, 50px);
+    line-height: 1.4285714286em;
   }
 }
 @media screen and (width >= 1024px) {
