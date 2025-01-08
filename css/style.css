@@ -87,6 +87,13 @@ a {
   }
 }
 
+@media screen and (width >= 1024px) {
+  .l-main {
+    width: calc(100% - min(4.296875vw, 55px) * 2);
+    margin: 0 auto;
+  }
+}
+
 .l-wrapper {
   position: relative;
   z-index: 10;

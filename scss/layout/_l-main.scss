@@ -1,1 +1,8 @@
 @use "../foundation/global" as g;
+
+.l-main {
+  @include g.pc {
+    width: calc(100% - min(g.pc-vw(44),55px)* 2);
+    margin: 0 auto;
+  }
+}
