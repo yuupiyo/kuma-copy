@@ -239,8 +239,27 @@ a {
 }
 
 .p-about {
-  background-color: #fff000;
+  background-color: #ffffff;
   overflow: hidden;
+}
+
+.p-about__inner {
+  position: relative;
+  max-width: 74.375rem;
+  width: min(80vw, 448px);
+  margin: 0 auto;
+  padding: min(23.2557333333vw, 100px) 0;
+}
+@media screen and (width >= 561px) {
+  .p-about__inner {
+    width: min(86.0463458111vw, 880.25px);
+  }
+}
+@media screen and (width >= 1024px) {
+  .p-about__inner {
+    width: 86.666015625vw;
+    padding: min(13.515625vw, 173px) 0 min(14.0625vw, 180px) min(1.5625vw, 20px);
+  }
 }
 
 .p-chatwork {

@@ -1,6 +1,20 @@
 @use "../../foundation/global" as g;
 
 .p-about {
-  background-color: g.$color-yellow;
+  background-color: g.$color-white;
   overflow: hidden;
+}
+.p-about__inner {
+  position: relative;
+  max-width: g.rem(1190);
+  width: min(g.sp-vw(300),448px);
+  margin: 0 auto;
+  padding: min(g.sp-vw(87.209),100px) 0;
+  @include g.s-tablet {
+    width: min(g.s-tb-vw(482.72),880.25px);
+  }
+  @include g.pc {
+    width: g.pc-vw(887.46);
+    padding: min(g.pc-vw(138.4),173px) 0 min(g.pc-vw(144),180px) min(g.pc-vw(16),20px);
+  }
 }
