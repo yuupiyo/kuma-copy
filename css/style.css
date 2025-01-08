@@ -766,6 +766,16 @@ a {
   }
 }
 
+.p-hero__kv-slider__base {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  max-width: 93.75rem;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
 .p-hero__kv-slider__contents li {
   opacity: 1;
   overflow: visible;

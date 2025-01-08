@@ -78,6 +78,15 @@
     z-index: 100;
   }
 }
+.p-hero__kv-slider__base {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  max-width: g.rem(1500);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
 
 // JSで制御する部分（JS実装が終わるまでコメントアウト）
 // body.is-load {
