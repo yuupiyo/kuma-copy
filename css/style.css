@@ -720,17 +720,37 @@ a {
   height: 100%;
 }
 
-body.is-load .p-hero__kv-slider__contents li {
-  opacity: 0;
-  overflow: hidden;
+.p-hero__kv-slider__contents li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  transform: translateY(-50%);
+  background-image: url(../../../img/kv/kv_cover_left.jpg);
+  background-size: 1.25rem 100%;
+  background-position: center;
+  background-repeat: repeat;
+  pointer-events: none;
+  z-index: 0;
 }
-body.is-load .p-hero__kv-slider__contents li.is-prev, body.is-load .p-hero__kv-slider__contents li.is-active {
-  opacity: 1;
-  overflow: visible;
-}
-body.is-load .p-hero__kv-slider__contents li.is-active {
-  transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition-property: opacity, visibility;
+.p-hero__kv-slider__contents li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  transform: translateY(-50%);
+  background-image: url(../../../img/kv/kv_cover_right.jpg);
+  background-size: 1.25rem 100%;
+  background-position: center;
+  background-repeat: repeat;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .p-hero__kv-slider__contents li {

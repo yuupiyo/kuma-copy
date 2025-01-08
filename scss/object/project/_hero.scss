@@ -28,6 +28,40 @@
   width: 100%;
   height: 100%;
 }
+.p-hero__kv-slider__contents li {
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    transform: translateY(-50%);
+    background-image: url(../../../img/kv/kv_cover_left.jpg);
+    background-size: g.rem(20) 100%;
+    background-position: center;
+    background-repeat: repeat;
+    pointer-events: none;
+    z-index: 0;
+  }
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    transform: translateY(-50%);
+    background-image: url(../../../img/kv/kv_cover_right.jpg);
+    background-size: g.rem(20) 100%;
+    background-position: center;
+    background-repeat: repeat;
+    pointer-events: none;
+    z-index: 0;
+  }
+}
 
 // JSで制御する部分（JS実装が終わるまでコメントアウト）
 // body.is-load {
