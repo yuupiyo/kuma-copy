@@ -9,8 +9,9 @@
   z-index: 10000;
   overflow: hidden;
   // @include g.tablet {
-  //   max-height: unset;
-  //   min-height: unset;
+  //   max-height: none;
+  //   min-height: auto;
+  //   height: auto;
   // }
 }
 .p-hero__kv {
@@ -86,6 +87,24 @@
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: url(../../../img/kv/kv_cover_top-sp.jpg);
+    background-size: 100% g.rem(20);
+    background-position: center;
+    background-repeat: repeat;
+    pointer-events: none;
+    z-index: 1;
+    @include g.pc {
+      background-image: url(../../../img/kv/kv_cover_top.jpg);
+    }
+  }
 }
 
 // JSで制御する部分（JS実装が終わるまでコメントアウト）
