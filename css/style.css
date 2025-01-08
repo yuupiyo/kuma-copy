@@ -262,6 +262,23 @@ a {
   }
 }
 
+.p-about__title {
+  position: relative;
+  font-size: min(8.2666666667vw, 36px);
+  z-index: 1;
+  white-space: nowrap;
+}
+@media screen and (width >= 561px) {
+  .p-about__title {
+    font-size: min(6.5953654189vw, 50px);
+  }
+}
+@media screen and (width >= 1024px) {
+  .p-about__title {
+    font-size: min(5.46875vw, 70px);
+  }
+}
+
 .p-chatwork {
   position: fixed;
   bottom: min(4.6512vw, 20px);

@@ -18,3 +18,15 @@
     padding: min(g.pc-vw(138.4),173px) 0 min(g.pc-vw(144),180px) min(g.pc-vw(16),20px);
   }
 }
+.p-about__title {
+  position: relative;
+  font-size: min(g.sp-vw(31),36px);
+  z-index: 1;
+  white-space: nowrap;
+  @include g.s-tablet {
+    font-size: min(g.s-tb-vw(37),50px);
+  }
+  @include g.pc {
+    font-size: min(g.pc-vw(56),70px)
+  }
+}
