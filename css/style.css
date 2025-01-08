@@ -282,6 +282,18 @@ a {
     font-size: min(5.46875vw, 70px);
   }
 }
+.p-about__title::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-top: -0.2083333333em;
+}
+@media screen and (width >= 561px) {
+  .p-about__title::before {
+    margin-top: -0.2142857143em;
+  }
+}
 
 .p-chatwork {
   position: fixed;

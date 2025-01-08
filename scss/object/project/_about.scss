@@ -33,4 +33,24 @@
   @include g.pc {
     font-size: min(g.pc-vw(56),70px)
   }
+  &::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top: calc((1 - calc(102 / 72))* .5em);
+    @include g.s-tablet {
+      margin-top: calc((1 - calc( 100 / 70 ))* .5em);
+    }
+  }
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    margin-bottom: calc((1 - calc(102 / 72))* .5em);
+    @include g.s-tablet {
+      margin-bottom: calc((1 - calc( 100 / 70 ))* .5em);
+    }
+  }
 }
