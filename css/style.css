@@ -238,6 +238,11 @@ a {
   height: min(1.7181640625vw, 22px);
 }
 
+.p-about {
+  background-color: #fff000;
+  overflow: hidden;
+}
+
 .p-chatwork {
   position: fixed;
   bottom: min(4.6512vw, 20px);
