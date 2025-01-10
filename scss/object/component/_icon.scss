@@ -39,3 +39,51 @@
   width: min(g.pc-vw(17.594),22px);
   height: min(g.pc-vw(17.594),22px);
 }
+
+// Xマーク
+.c-icon__batsu {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  background-color: g.$color-black;
+  transition: 0.150s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition-property: background-color, transform;
+  &::before {
+    content: '';
+    display: block;
+    width: min(g.sp-vw(13.078),15px);
+    height: g.rem(2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: g.$color-white;
+    @include g.s-tablet {
+      width: min(g.s-tb-vw(10.969),15px);
+    }
+  }
+  &::after {
+    content: '';
+    display: block;
+    width: g.rem(2);
+    height: min(g.sp-vw(13.078),15px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: g.$color-white;
+    transition: all 0.27s cubic-bezier(0.77, 0, 0.175, 1);
+    @include g.s-tablet {
+      height: min(g.s-tb-vw(10.969),15px);
+    }
+  }
+}
+.c-icon__batsu--large {
+  @extend .c-icon__batsu;
+  width: min(g.sp-vw(30.516),35px);
+  height: min(g.sp-vw(30.516),35px);
+  @include g.s-tablet {
+    width: min(g.s-tb-vw(25.594),35px);
+    height: min(g.s-tb-vw(25.594),35px);
+  }
+}

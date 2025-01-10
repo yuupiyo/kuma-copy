@@ -89,3 +89,11 @@
     }
   }
 }
+
+// xボタン
+.p-chatwork__button {
+  display: block;
+  @include g.pc {
+    display: none;
+  }
+}

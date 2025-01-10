@@ -238,6 +238,59 @@ a {
   height: min(1.7181640625vw, 22px);
 }
 
+.c-icon__batsu, .c-icon__batsu--large {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  background-color: #000000;
+  transition: 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition-property: background-color, transform;
+}
+.c-icon__batsu::before, .c-icon__batsu--large::before {
+  content: "";
+  display: block;
+  width: min(3.4874666667vw, 15px);
+  height: 0.125rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #ffffff;
+}
+@media screen and (width >= 561px) {
+  .c-icon__batsu::before, .c-icon__batsu--large::before {
+    width: min(1.955258467vw, 15px);
+  }
+}
+.c-icon__batsu::after, .c-icon__batsu--large::after {
+  content: "";
+  display: block;
+  width: 0.125rem;
+  height: min(3.4874666667vw, 15px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #ffffff;
+  transition: all 0.27s cubic-bezier(0.77, 0, 0.175, 1);
+}
+@media screen and (width >= 561px) {
+  .c-icon__batsu::after, .c-icon__batsu--large::after {
+    height: min(1.955258467vw, 15px);
+  }
+}
+
+.c-icon__batsu--large {
+  width: min(8.1376vw, 35px);
+  height: min(8.1376vw, 35px);
+}
+@media screen and (width >= 561px) {
+  .c-icon__batsu--large {
+    width: min(4.5622103387vw, 35px);
+    height: min(4.5622103387vw, 35px);
+  }
+}
+
 .c-map {
   position: relative;
 }
@@ -471,6 +524,15 @@ a {
     filter: brightness(0) invert(1);
   }
 }
+.p-chatwork__button {
+  display: block;
+}
+@media screen and (width >= 1024px) {
+  .p-chatwork__button {
+    display: none;
+  }
+}
+
 .p-header__inner {
   display: block;
   height: min(29.768vw, 128px);
