@@ -471,6 +471,11 @@ a {
     margin-bottom: -0.75em;
   }
 }
+.p-about__text > p::after {
+  content: "\a\a";
+  display: inline;
+  white-space: pre;
+}
 
 .p-chatwork {
   position: fixed;

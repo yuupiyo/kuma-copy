@@ -139,4 +139,9 @@
       margin-bottom: calc((1 - calc(50 / 20))* .5em);
     }
   }
+  & > p::after {
+    content: '\A\A';
+    display: inline;
+    white-space: pre;
+  }
 }
