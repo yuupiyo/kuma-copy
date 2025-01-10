@@ -1,1 +1,13 @@
 @use "../../foundation/global" as g;
+
+.c-coder {
+  position: relative;
+  width: min(g.sp-vw(175.289),201px);
+  z-index: 10;
+  @include g.s-tablet {
+    width: min(g.s-tb-vw(147.008),201px);
+  }
+  @include g.pc {
+    width: min(g.pc-vw(232),290px);
+  }
+}

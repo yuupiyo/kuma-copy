@@ -138,6 +138,22 @@ a {
   transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+.c-coder {
+  position: relative;
+  width: min(46.7437333333vw, 201px);
+  z-index: 10;
+}
+@media screen and (width >= 561px) {
+  .c-coder {
+    width: min(26.2046345811vw, 201px);
+  }
+}
+@media screen and (width >= 1024px) {
+  .c-coder {
+    width: min(22.65625vw, 290px);
+  }
+}
+
 .c-display__sponly {
   display: block;
 }
