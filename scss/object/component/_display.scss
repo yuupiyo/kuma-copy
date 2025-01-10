@@ -13,6 +13,12 @@
     display: none;
   }
 }
+.c-display__sponly--contents {
+  display: block;
+  @include g.pc {
+    display: contents;
+  }
+}
 // pcサイズのみ
 .c-display__pconly {
   display: none;
@@ -24,5 +30,11 @@
   display: none;
   @include g.pc {
     display: inline-block;
+  }
+}
+.c-display__pconly--contents {
+  display: contents;
+  @include g.pc {
+    display: block;
   }
 }

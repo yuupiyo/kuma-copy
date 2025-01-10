@@ -172,6 +172,15 @@ a {
   }
 }
 
+.c-display__sponly--contents {
+  display: block;
+}
+@media screen and (width >= 1024px) {
+  .c-display__sponly--contents {
+    display: contents;
+  }
+}
+
 .c-display__pconly {
   display: none;
 }
@@ -187,6 +196,15 @@ a {
 @media screen and (width >= 1024px) {
   .c-display__pconly--inline {
     display: inline-block;
+  }
+}
+
+.c-display__pconly--contents {
+  display: contents;
+}
+@media screen and (width >= 1024px) {
+  .c-display__pconly--contents {
+    display: block;
   }
 }
 
