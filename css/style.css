@@ -493,6 +493,23 @@ a {
   white-space: pre;
 }
 
+.p-about__coder {
+  position: absolute;
+  bottom: 0;
+  right: max(-12.5581333333vw, -54px);
+  z-index: auto;
+}
+@media screen and (width >= 561px) {
+  .p-about__coder {
+    right: max(-7.0404634581vw, -54px);
+  }
+}
+@media screen and (width >= 1024px) {
+  .p-about__coder {
+    right: min(1.5625vw, 20px);
+  }
+}
+
 .p-chatwork {
   position: fixed;
   bottom: min(4.6512vw, 20px);

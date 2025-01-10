@@ -145,3 +145,17 @@
     white-space: pre;
   }
 }
+
+// コーダーの写真部分
+.p-about__coder {
+  position: absolute;
+  bottom: 0;
+  right: max(g.sp-vw(-47.093),-54px);
+  z-index: auto;
+  @include g.s-tablet {
+    right: max(g.s-tb-vw(-39.497),-54px);
+  }
+  @include g.pc {
+    right: min(g.pc-vw(16),20px);
+  }
+}
