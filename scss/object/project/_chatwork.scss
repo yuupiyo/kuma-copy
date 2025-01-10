@@ -93,6 +93,14 @@
 // xボタン
 .p-chatwork__button {
   display: block;
+  position: absolute;
+  top: max(g.sp-vw(-8.721),-10px);
+  right: max(g.sp-vw(-8.721),-10px);
+  z-index: 10;
+  @include g.s-tablet {
+    top: max(g.s-tb-vw(-7.314),-10px);
+    right: max(g.s-tb-vw(-7.314),-10px);
+  }
   @include g.pc {
     display: none;
   }

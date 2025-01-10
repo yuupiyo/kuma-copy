@@ -526,6 +526,16 @@ a {
 }
 .p-chatwork__button {
   display: block;
+  position: absolute;
+  top: max(-2.3256vw, -10px);
+  right: max(-2.3256vw, -10px);
+  z-index: 10;
+}
+@media screen and (width >= 561px) {
+  .p-chatwork__button {
+    top: max(-1.3037433155vw, -10px);
+    right: max(-1.3037433155vw, -10px);
+  }
 }
 @media screen and (width >= 1024px) {
   .p-chatwork__button {
