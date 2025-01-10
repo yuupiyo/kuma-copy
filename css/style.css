@@ -415,6 +415,14 @@ a {
     width: 70%;
   }
 }
+@media screen and (width >= 1024px) {
+  .p-about__map {
+    top: min(8.984375vw, 115px);
+    right: max(-0.390625vw, -5px);
+    max-width: none;
+    width: min(60.9375vw, 780px);
+  }
+}
 
 .p-chatwork {
   position: fixed;

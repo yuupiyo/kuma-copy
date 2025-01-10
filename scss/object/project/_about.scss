@@ -92,4 +92,10 @@
     max-width: g.rem(600);
     width: 70%;
   }
+  @include g.pc {
+    top: min(g.pc-vw(92),115px);
+    right: max(g.pc-vw(-4),-5px);
+    max-width: none;
+    width: min(g.pc-vw(624),780px);
+  }
 }
