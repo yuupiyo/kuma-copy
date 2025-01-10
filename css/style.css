@@ -366,9 +366,16 @@ a {
 .p-chatwork {
   position: fixed;
   bottom: min(4.6512vw, 20px);
-  left: 18.75px;
-  width: min(68.6666666667vw, 871.625px);
+  left: min(5vw, 28px);
+  width: min(68.6666666667vw, 424px);
   z-index: 100000000;
+}
+@media screen and (width >= 561px) {
+  .p-chatwork {
+    bottom: min(2.607486631vw, 20px);
+    left: min(3.4884135472vw, 28px);
+    width: min(78.7629233512vw, 871.63px);
+  }
 }
 @media screen and (width >= 1024px) {
   .p-chatwork {
@@ -408,6 +415,11 @@ a {
   z-index: 1;
   overflow: hidden;
 }
+@media screen and (width >= 561px) {
+  .p-chatwork a {
+    padding: min(1.6948306595vw, 13px) 0;
+  }
+}
 @media screen and (width >= 1024px) {
   .p-chatwork a {
     justify-content: flex-start;
@@ -421,6 +433,11 @@ a {
   width: min(28.1376vw, 121px);
   transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+@media screen and (width >= 561px) {
+  .p-chatwork__logo {
+    width: min(15.7754010695vw, 121px);
+  }
+}
 @media screen and (width >= 1024px) {
   .p-chatwork__logo {
     width: min(8.2809570312vw, 106px);
@@ -430,6 +447,12 @@ a {
 .p-chatwork__text {
   margin-left: min(0.6976vw, 3px);
   font-size: min(4.5333333333vw, 19px);
+}
+@media screen and (width >= 561px) {
+  .p-chatwork__text {
+    margin-left: min(0.391087344vw, 3px);
+    font-size: min(2.6737967914vw, 19px);
+  }
 }
 @media screen and (width >= 1024px) {
   .p-chatwork__text {

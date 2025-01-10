@@ -3,9 +3,14 @@
 .p-chatwork {
   position: fixed;
   bottom: min(g.sp-vw(17.442),20px);
-  left: calc( 43 / 860 * calc( 3.75px * 100 ));
-  width: min(g.sp-vw(257.5),871.625px);
+  left: min(g.sp-vw(18.75),28px);
+  width: min(g.sp-vw(257.5),424px);
   z-index: 100000000;
+  @include g.s-tablet {
+    bottom: min(g.s-tb-vw(14.628),20px);
+    left: min(g.s-tb-vw(19.57),28px);
+    width: min(g.s-tb-vw(441.86),871.63px);
+  }
   @include g.pc {
     top: min(g.pc-vw(192),240px);
     bottom: unset;
@@ -39,6 +44,9 @@
     border: solid g.rem(3) g.$color-dark;
     z-index: 1;
     overflow: hidden;
+    @include g.s-tablet {
+      padding: min(g.s-tb-vw(9.508),13px) 0;
+    }
     @include g.pc {
       justify-content: flex-start;
       padding: min(g.pc-vw(11.2),14px) 0 min(g.pc-vw(11.2),14px) min(g.pc-vw(20.8),26px);
@@ -50,6 +58,9 @@
 .p-chatwork__logo {
   width: min(g.sp-vw(105.516),121px);
   transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  @include g.s-tablet {
+    width: min(g.s-tb-vw(88.5),121px);
+  }
   @include g.pc {
     width: min(g.pc-vw(84.797),106px);
   }
@@ -57,6 +68,10 @@
 .p-chatwork__text {
   margin-left: min(g.sp-vw(2.616),3px);
   font-size: min(g.sp-vw(17),19px);
+  @include g.s-tablet {
+    margin-left: min(g.s-tb-vw(2.194),3px);
+    font-size: min(g.s-tb-vw(15),19px);
+  }
   @include g.pc {
     margin-left: min(g.pc-vw(3.2),4px);
     font-size: min(g.pc-vw(15),18px);
