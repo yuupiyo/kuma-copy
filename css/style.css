@@ -424,6 +424,23 @@ a {
   }
 }
 
+.p-about__text {
+  position: relative;
+  margin-top: min(54.8837333333vw, 236px);
+  font-weight: 700;
+  z-index: 1;
+}
+@media screen and (width >= 561px) {
+  .p-about__text {
+    margin-top: min(12.907486631vw, 99px);
+  }
+}
+@media screen and (width >= 1024px) {
+  .p-about__text {
+    margin-top: min(7.734375vw, 99px);
+  }
+}
+
 .p-chatwork {
   position: fixed;
   bottom: min(4.6512vw, 20px);

@@ -99,3 +99,17 @@
     width: min(g.pc-vw(624),780px);
   }
 }
+
+// 説明文
+.p-about__text {
+  position: relative;
+  margin-top: min(g.sp-vw(205.814),236px);
+  font-weight: 700;
+  z-index: 1;
+  @include g.s-tablet {
+    margin-top: min(g.s-tb-vw(72.411),99px);
+  }
+  @include g.pc {
+    margin-top: min(g.pc-vw(79.2),99px);
+  }
+}
