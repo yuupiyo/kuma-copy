@@ -60,10 +60,35 @@
     margin-bottom: min(g.sp-vw(3.2),4px);
     margin-right: max(g.sp-vw(-4.8),-3px);
     vertical-align: bottom;
+    @include g.s-tablet {
+      width: min(g.s-tb-vw(39.49),54px);
+      margin-top: min(g.s-tb-vw(2.194),3px);
+      margin-bottom: min(g.s-tb-vw(2.926),4px);
+      margin-right: max(g.sp-vw(-4.8),-3px);
+    }
     @include g.pc {
       width: min(g.pc-vw(86.4),108px);
       margin-top: min(g.pc-vw(6.4),8px);
       margin-right: max(g.pc-vw(-11.2),-7px);
     }
+  }
+}
+
+// 日本地図
+.p-about__map {
+  display: block;
+  position: absolute;
+  top: min(g.sp-vw(61.047),70px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(g.sp-vw(374.99),430px);
+  z-index: 0;
+  @include g.s-tablet {
+    top: min(g.s-tb-vw(73.142),100px);
+    right: 0;
+    left: unset;
+    transform: translateX(0);
+    max-width: g.rem(600);
+    width: 70%;
   }
 }

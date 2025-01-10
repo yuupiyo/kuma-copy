@@ -326,11 +326,39 @@ a {
   margin-right: max(-1.28vw, -3px);
   vertical-align: bottom;
 }
+@media screen and (width >= 561px) {
+  .p-about__title span {
+    width: min(7.0392156863vw, 54px);
+    margin-top: min(0.391087344vw, 3px);
+    margin-bottom: min(0.5215686275vw, 4px);
+    margin-right: max(-1.28vw, -3px);
+  }
+}
 @media screen and (width >= 1024px) {
   .p-about__title span {
     width: min(8.4375vw, 108px);
     margin-top: min(0.625vw, 8px);
     margin-right: max(-1.09375vw, -7px);
+  }
+}
+
+.p-about__map {
+  display: block;
+  position: absolute;
+  top: min(16.2792vw, 70px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(99.9973333333vw, 430px);
+  z-index: 0;
+}
+@media screen and (width >= 561px) {
+  .p-about__map {
+    top: min(13.0377896613vw, 100px);
+    right: 0;
+    left: unset;
+    transform: translateX(0);
+    max-width: 37.5rem;
+    width: 70%;
   }
 }
 
