@@ -427,17 +427,48 @@ a {
 .p-about__text {
   position: relative;
   margin-top: min(54.8837333333vw, 236px);
+  padding-top: 0.00625rem;
+  padding-bottom: 0.00625rem;
+  font-size: min(3.7333333333vw, 16px);
   font-weight: 700;
+  line-height: 2.1875em;
   z-index: 1;
 }
 @media screen and (width >= 561px) {
   .p-about__text {
     margin-top: min(12.907486631vw, 99px);
+    font-size: min(2.3172905526vw, 16px);
   }
 }
 @media screen and (width >= 1024px) {
   .p-about__text {
     margin-top: min(7.734375vw, 99px);
+    font-size: min(1.5625vw, 20px);
+    line-height: 2.5em;
+  }
+}
+.p-about__text::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-top: -0.59375em;
+}
+@media screen and (width >= 1024px) {
+  .p-about__text::before {
+    margin-top: -0.75em;
+  }
+}
+.p-about__text::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-bottom: -0.59375em;
+}
+@media screen and (width >= 1024px) {
+  .p-about__text::after {
+    margin-bottom: -0.75em;
   }
 }
 
