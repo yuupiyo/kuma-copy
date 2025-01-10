@@ -65,7 +65,7 @@
       width: min(g.s-tb-vw(39.49),54px);
       margin-top: min(g.s-tb-vw(2.194),3px);
       margin-bottom: min(g.s-tb-vw(2.926),4px);
-      margin-right: max(g.sp-vw(-4.8),-3px);
+      margin-right: max(g.s-tb-vw(-9.6),-6px);
     }
     @include g.pc {
       width: min(g.pc-vw(86.4),108px);
