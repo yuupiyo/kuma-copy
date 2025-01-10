@@ -265,6 +265,7 @@ a {
 @media screen and (width >= 561px) {
   .p-about__inner {
     width: min(86.0463458111vw, 880.25px);
+    padding: min(13.0377896613vw, 100px) 0;
   }
 }
 @media screen and (width >= 1024px) {

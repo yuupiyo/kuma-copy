@@ -12,6 +12,7 @@
   padding: min(g.sp-vw(87.209),100px) 0;
   @include g.s-tablet {
     width: min(g.s-tb-vw(482.72),880.25px);
+    padding: min(g.s-tb-vw(73.142),100px) 0;
   }
   @include g.pc {
     width: g.pc-vw(887.46);
