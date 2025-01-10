@@ -53,4 +53,17 @@
       margin-bottom: calc((1 - calc( 100 / 70 ))* .5em);
     }
   }
+  & span {
+    display: inline-block;
+    width: min(g.sp-vw(47.09),54px);
+    margin-top: min(g.sp-vw(2.616),3px);
+    margin-bottom: min(g.sp-vw(3.2),4px);
+    margin-right: max(g.sp-vw(-4.8),-3px);
+    vertical-align: bottom;
+    @include g.pc {
+      width: min(g.pc-vw(86.4),108px);
+      margin-top: min(g.pc-vw(6.4),8px);
+      margin-right: max(g.pc-vw(-11.2),-7px);
+    }
+  }
 }

@@ -294,6 +294,33 @@ a {
     margin-top: -0.2142857143em;
   }
 }
+.p-about__title::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-bottom: -0.2083333333em;
+}
+@media screen and (width >= 561px) {
+  .p-about__title::after {
+    margin-bottom: -0.2142857143em;
+  }
+}
+.p-about__title span {
+  display: inline-block;
+  width: min(12.5573333333vw, 54px);
+  margin-top: min(0.6976vw, 3px);
+  margin-bottom: min(0.8533333333vw, 4px);
+  margin-right: max(-1.28vw, -3px);
+  vertical-align: bottom;
+}
+@media screen and (width >= 1024px) {
+  .p-about__title span {
+    width: min(8.4375vw, 108px);
+    margin-top: min(0.625vw, 8px);
+    margin-right: max(-1.09375vw, -7px);
+  }
+}
 
 .p-chatwork {
   position: fixed;
