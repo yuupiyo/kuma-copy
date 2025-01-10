@@ -22,6 +22,9 @@
 // ロゴ
 .p-header__logo {
   width: min(g.sp-vw(123.84),142px);
+  @include g.s-tablet {
+    width: min(g.s-tb-vw(103.86),142px);
+  }
   @include g.pc {
     width: min(g.pc-vw(140.8),176px);
   }

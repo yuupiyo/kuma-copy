@@ -476,6 +476,11 @@ a {
 .p-header__logo {
   width: min(33.024vw, 142px);
 }
+@media screen and (width >= 561px) {
+  .p-header__logo {
+    width: min(18.513368984vw, 142px);
+  }
+}
 @media screen and (width >= 1024px) {
   .p-header__logo {
     width: min(13.75vw, 176px);
