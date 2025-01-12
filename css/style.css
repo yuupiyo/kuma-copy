@@ -154,6 +154,28 @@ a {
   }
 }
 
+.c-coder__catch {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  position: absolute;
+  top: max(-4.6512vw, -20px);
+  right: min(9.7674666667vw, 42px);
+  z-index: 1;
+}
+@media screen and (width >= 561px) {
+  .c-coder__catch {
+    top: max(-2.607486631vw, -20px);
+    right: min(5.4759358289vw, 42px);
+  }
+}
+@media screen and (width >= 1024px) {
+  .c-coder__catch {
+    top: min(0.15625vw, 2px);
+    right: 0;
+  }
+}
+
 .c-display__sponly {
   display: block;
 }

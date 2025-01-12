@@ -11,3 +11,21 @@
     width: min(g.pc-vw(232),290px);
   }
 }
+
+.c-coder__catch {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  position: absolute;
+  top: max(g.sp-vw(-17.442),-20px);
+  right: min(g.sp-vw(36.628),42px);
+  z-index: 1;
+  @include g.s-tablet {
+    top: max(g.s-tb-vw(-14.628),-20px);
+    right: min(g.s-tb-vw(30.72),42px);
+  }
+  @include g.pc {
+    top: min(g.pc-vw(1.6),2px);
+    right: 0;
+  }
+}
