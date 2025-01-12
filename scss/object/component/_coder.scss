@@ -11,6 +11,9 @@
     width: min(g.pc-vw(232),290px);
   }
 }
+.c-coder__01 {
+  @extend .c-coder;
+}
 
 .c-coder__catch {
   display: flex;
@@ -27,5 +30,20 @@
   @include g.pc {
     top: min(g.pc-vw(1.6),2px);
     right: 0;
+  }
+  & > span {
+    display: block;
+    padding: min(g.sp-vw(6.105),7px) min(g.sp-vw(4.36),5px) min(g.sp-vw(8.721),10px);
+    font-size: min(g.sp-vw(13),15px);
+    color: g.$color-white;
+    writing-mode: vertical-rl;
+    background-color: g.$color-black;
+    @include g.s-tablet {
+      padding: min(g.s-tb-vw(5.12),7px) min(g.s-tb-vw(3.657),5px) min(g.s-tb-vw(7.314),10px);
+    }
+    @include g.pc {
+      padding: min(g.pc-vw(8),10px) min(g.pc-vw(5.6),7px) min(g.pc-vw(12.8),16px);
+      font-size: min(g.pc-vw(18),22px);
+    }
   }
 }

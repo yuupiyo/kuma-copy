@@ -138,18 +138,18 @@ a {
   transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.c-coder {
+.c-coder, .c-coder__01 {
   position: relative;
   width: min(46.7437333333vw, 201px);
   z-index: 10;
 }
 @media screen and (width >= 561px) {
-  .c-coder {
+  .c-coder, .c-coder__01 {
     width: min(26.2046345811vw, 201px);
   }
 }
 @media screen and (width >= 1024px) {
-  .c-coder {
+  .c-coder, .c-coder__01 {
     width: min(22.65625vw, 290px);
   }
 }
@@ -173,6 +173,25 @@ a {
   .c-coder__catch {
     top: min(0.15625vw, 2px);
     right: 0;
+  }
+}
+.c-coder__catch > span {
+  display: block;
+  padding: min(1.628vw, 7px) min(1.1626666667vw, 5px) min(2.3256vw, 10px);
+  font-size: min(3.4666666667vw, 15px);
+  color: #ffffff;
+  writing-mode: vertical-rl;
+  background-color: #000000;
+}
+@media screen and (width >= 561px) {
+  .c-coder__catch > span {
+    padding: min(0.9126559715vw, 7px) min(0.6518716578vw, 5px) min(1.3037433155vw, 10px);
+  }
+}
+@media screen and (width >= 1024px) {
+  .c-coder__catch > span {
+    padding: min(0.78125vw, 10px) min(0.546875vw, 7px) min(1.25vw, 16px);
+    font-size: min(1.7578125vw, 22px);
   }
 }
 
@@ -537,7 +556,6 @@ a {
   position: absolute;
   bottom: 0;
   right: max(-12.5581333333vw, -54px);
-  z-index: auto;
 }
 @media screen and (width >= 561px) {
   .p-about__coder {
