@@ -507,7 +507,7 @@ a {
   font-size: min(3.7333333333vw, 16px);
   font-weight: 700;
   line-height: 2.1875em;
-  z-index: 1;
+  z-index: 11;
 }
 @media screen and (width >= 561px) {
   .p-about__text {
@@ -546,7 +546,7 @@ a {
     margin-bottom: -0.75em;
   }
 }
-.p-about__text > p::after {
+.p-about__text > p:first-child::after {
   content: "\a\a";
   display: inline;
   white-space: pre;
@@ -556,6 +556,7 @@ a {
   position: absolute;
   bottom: 0;
   right: max(-12.5581333333vw, -54px);
+  z-index: auto;
 }
 @media screen and (width >= 561px) {
   .p-about__coder {
