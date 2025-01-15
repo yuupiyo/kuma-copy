@@ -48,3 +48,38 @@
     }
   }
 }
+// profile部分
+.c-coder__popup {
+  display: block;
+  position: absolute;
+  bottom: min(g.sp-vw(103.779),119px);
+  left: auto;
+  right: min(g.sp-vw(27.907),32px);
+  text-align: left;
+  border-width: g.rem(3);
+  border-radius: g.rem(10);
+  z-index: 10;
+  pointer-events: auto;
+  @include g.s-tablet {
+    bottom: min(g.s-tb-vw(87.039),119px);
+    right: min(g.s-tb-vw(23.405),32px);
+  }
+  @include g.pc {
+    bottom: min(g.pc-vw(60),75px);
+    right: min(g.pc-vw(0.8),1px);
+    border-width: g.rem(5);
+  }
+}
+.c-coder__profile {
+  width: min(g.sp-vw(93),107px);
+  padding: min(g.sp-vw(17.442),20px) min(g.sp-vw(13.081),15px);
+  white-space: nowrap;
+  @include g.s-tablet {
+    width: min(g.s-tb-vw(86),107px);
+    padding: min(g.s-tb-vw(14.628),20px) min(g.s-tb-vw(10.971),15px);
+  }
+  @include g.pc {
+    width: min(g.pc-vw(148),185px);
+    padding: min(g.pc-vw(16.8),21px) min(g.pc-vw(19.2),24px);
+  }
+}

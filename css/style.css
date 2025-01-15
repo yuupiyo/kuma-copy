@@ -195,6 +195,50 @@ a {
   }
 }
 
+.c-coder__popup {
+  display: block;
+  position: absolute;
+  bottom: min(27.6744vw, 119px);
+  left: auto;
+  right: min(7.4418666667vw, 32px);
+  text-align: left;
+  border-width: 0.1875rem;
+  border-radius: 0.625rem;
+  z-index: 10;
+  pointer-events: auto;
+}
+@media screen and (width >= 561px) {
+  .c-coder__popup {
+    bottom: min(15.514973262vw, 119px);
+    right: min(4.1720142602vw, 32px);
+  }
+}
+@media screen and (width >= 1024px) {
+  .c-coder__popup {
+    bottom: min(5.859375vw, 75px);
+    right: min(0.078125vw, 1px);
+    border-width: 0.3125rem;
+  }
+}
+
+.c-coder__profile {
+  width: min(24.8vw, 107px);
+  padding: min(4.6512vw, 20px) min(3.4882666667vw, 15px);
+  white-space: nowrap;
+}
+@media screen and (width >= 561px) {
+  .c-coder__profile {
+    width: min(15.3297682709vw, 107px);
+    padding: min(2.607486631vw, 20px) min(1.9556149733vw, 15px);
+  }
+}
+@media screen and (width >= 1024px) {
+  .c-coder__profile {
+    width: min(14.453125vw, 185px);
+    padding: min(1.640625vw, 21px) min(1.875vw, 24px);
+  }
+}
+
 .c-display__sponly {
   display: block;
 }
