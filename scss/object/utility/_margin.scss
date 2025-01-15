@@ -1,0 +1,11 @@
+@use "../../foundation/global" as g;
+
+.u-margin-right__5 {
+  margin-right: min(g.sp-vw(4.36),5px);
+  @include g.s-tablet {
+    margin-right: min(g.s-tb-vw(3.657),5px);
+  }
+  @include g.pc {
+    margin-right: min(g.pc-vw(4),5px);
+  }
+}

@@ -569,6 +569,24 @@ a {
   }
 }
 
+.p-about__coder__catch--sponly {
+  display: block;
+}
+@media screen and (width >= 1024px) {
+  .p-about__coder__catch--sponly {
+    display: contents;
+  }
+}
+
+.p-about__coder__catch--pconly {
+  display: contents;
+}
+@media screen and (width >= 1024px) {
+  .p-about__coder__catch--pconly {
+    display: block;
+  }
+}
+
 .p-chatwork {
   position: fixed;
   bottom: min(4.6512vw, 20px);
@@ -1207,5 +1225,19 @@ a {
 .p-hero__kv-slider__contents li {
   opacity: 1;
   overflow: visible;
+}
+
+.u-margin-right__5 {
+  margin-right: min(1.1626666667vw, 5px);
+}
+@media screen and (width >= 561px) {
+  .u-margin-right__5 {
+    margin-right: min(0.6518716578vw, 5px);
+  }
+}
+@media screen and (width >= 1024px) {
+  .u-margin-right__5 {
+    margin-right: min(0.390625vw, 5px);
+  }
 }
 /*# sourceMappingURL=style.css.map */

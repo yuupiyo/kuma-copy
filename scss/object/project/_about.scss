@@ -159,3 +159,15 @@
     right: min(g.pc-vw(16),20px);
   }
 }
+.p-about__coder__catch--sponly {
+  display: block;
+  @include g.pc {
+    display: contents;
+  }
+}
+.p-about__coder__catch--pconly {
+  display: contents;
+  @include g.pc {
+    display: block;
+  }
+}

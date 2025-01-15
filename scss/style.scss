@@ -14,7 +14,7 @@
 @use "./layout/l-wrapper";
 
 // =========================================
-// foundation
+// object
 // =========================================
 // component
 @use "./object/component/arrow";
@@ -31,3 +31,8 @@
 @use "./object/project/chatwork";
 @use "./object/project/header";
 @use "./object/project/hero";
+
+// =========================================
+// utility
+// =========================================
+@use "./object/utility/margin";
