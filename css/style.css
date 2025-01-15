@@ -291,6 +291,22 @@ a {
   height: 0;
   margin-bottom: -0.1785714286em;
 }
+.c-coder__profile__category span {
+  display: block;
+}
+@media screen and (width >= 1024px) {
+  .c-coder__profile__category span {
+    display: inline-block;
+  }
+}
+.c-coder__profile__category span + span::before {
+  content: none;
+}
+@media screen and (width >= 1024px) {
+  .c-coder__profile__category span + span::before {
+    content: "/";
+  }
+}
 
 .c-coder__popup__background {
   position: absolute;

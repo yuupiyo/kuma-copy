@@ -125,6 +125,18 @@
     height: 0;
     margin-bottom: calc((1 - calc( 38 / 28 ))* .5em);
   }
+  & span {
+    display: block;
+    @include g.pc {
+      display: inline-block;
+    }
+  }
+  & span+span::before {
+    content: none;
+    @include g.pc {
+      content: '/';
+    }
+  }
 }
 .c-coder__popup__background {
   position: absolute;
