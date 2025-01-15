@@ -1,1 +1,14 @@
 @use "../../foundation/global" as g;
+
+.p-data {
+  position: relative;
+  padding: min(g.sp-vw(87.209),100px) 0 0;
+  background: g.$color-red;
+  z-index: 0;
+  @include g.s-tablet {
+    padding: min(g.s-tb-vw(73.142),100px) 0 0;
+  }
+  @include g.pc {
+    padding: 0 0 min(g.pc-vw(40),50px);
+  }
+}

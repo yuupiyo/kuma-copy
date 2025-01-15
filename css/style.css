@@ -937,6 +937,23 @@ a {
   }
 }
 
+.p-data {
+  position: relative;
+  padding: min(23.2557333333vw, 100px) 0 0;
+  background: #e9352c;
+  z-index: 0;
+}
+@media screen and (width >= 561px) {
+  .p-data {
+    padding: min(13.0377896613vw, 100px) 0 0;
+  }
+}
+@media screen and (width >= 1024px) {
+  .p-data {
+    padding: 0 0 min(3.90625vw, 50px);
+  }
+}
+
 .p-header__inner {
   display: block;
   height: min(29.768vw, 128px);
