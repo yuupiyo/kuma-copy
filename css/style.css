@@ -1481,6 +1481,20 @@ a {
     transform: translate3d(-100%, 0, 0);
   }
 }
+.p-imageslider__item {
+  width: min(72.5562666667vw, 312px);
+}
+@media screen and (width >= 561px) {
+  .p-imageslider__item {
+    width: min(40.6778966132vw, 312px);
+  }
+}
+@media screen and (width >= 1024px) {
+  .p-imageslider__item {
+    width: min(39.0625vw, 500px);
+  }
+}
+
 .u-margin-right__5 {
   margin-right: min(1.1626666667vw, 5px);
 }
