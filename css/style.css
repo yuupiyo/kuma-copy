@@ -409,6 +409,15 @@ a {
   }
 }
 
+@media (any-hover: hover) {
+  .c-coder__popup:hover {
+    color: #e9352c;
+  }
+  .c-coder__popup:hover .c-coder__popup__icon {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+  }
+}
 .c-display__sponly {
   display: block;
 }

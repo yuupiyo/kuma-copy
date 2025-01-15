@@ -214,3 +214,13 @@
     height: min(g.pc-vw(68),84px);
   }
 }
+
+// hover時
+@media (any-hover: hover) {
+  .c-coder__popup:hover {
+    color: g.$color-red;
+    & .c-coder__popup__icon {
+      animation-play-state: paused;
+    }
+  }
+}
