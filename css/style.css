@@ -202,7 +202,6 @@ a {
   left: auto;
   right: min(7.4418666667vw, 32px);
   text-align: left;
-  border-width: 0.1875rem;
   border-radius: 0.625rem;
   z-index: 10;
   pointer-events: auto;
@@ -217,8 +216,11 @@ a {
   .c-coder__popup {
     bottom: min(5.859375vw, 75px);
     right: min(0.078125vw, 1px);
-    border-width: 0.3125rem;
   }
+}
+.c-coder__popup > :not(.c-coder__popup__bg) {
+  opacity: 1;
+  overflow: visible;
 }
 
 .c-coder__profile {
@@ -236,6 +238,71 @@ a {
   .c-coder__profile {
     width: min(14.453125vw, 185px);
     padding: min(1.640625vw, 21px) min(1.875vw, 24px);
+  }
+}
+
+.c-coder__profile__name {
+  font-size: min(3.7333333333vw, 16px);
+  text-decoration: underline;
+  text-underline-offset: 0.1875rem;
+}
+@media screen and (width >= 561px) {
+  .c-coder__profile__name {
+    font-size: min(2.3172905526vw, 16px);
+  }
+}
+@media screen and (width >= 1024px) {
+  .c-coder__profile__name {
+    font-size: min(1.46484375vw, 18px);
+    text-underline-offset: 0.25rem;
+  }
+}
+
+.c-coder__profile__category {
+  margin-top: min(1.8605333333vw, 8px);
+  padding-top: 0.0625rem;
+  padding-bottom: 0.0625rem;
+  font-size: min(3.2vw, 14px);
+  line-height: 1.3571428571em;
+}
+@media screen and (width >= 561px) {
+  .c-coder__profile__category {
+    margin-top: min(1.0429590018vw, 8px);
+    font-size: min(2.1390374332vw, 14px);
+  }
+}
+@media screen and (width >= 1024px) {
+  .c-coder__profile__category {
+    margin-top: min(0.625vw, 8px);
+    font-size: min(1.26953125vw, 16px);
+  }
+}
+
+.c-coder__popup__background {
+  position: absolute;
+  left: auto;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: min(24.8vw, 107px);
+  height: min(22.6666666667vw, 97px);
+  border-radius: 0.625rem;
+  border-right: solid #e3e3e3;
+  border-bottom: solid #e3e3e3;
+  background-color: #ffffff;
+  transition: 0.3s cubic-bezier(0.42, -0.32, 0.24, 1.36);
+  transition-property: width, height;
+}
+@media screen and (width >= 561px) {
+  .c-coder__popup__background {
+    width: min(15.3297682709vw, 107px);
+    height: min(13.7254901961vw, 97px);
+  }
+}
+@media screen and (width >= 1024px) {
+  .c-coder__popup__background {
+    width: min(14.453125vw, 185px);
+    height: min(6.640625vw, 84px);
   }
 }
 
