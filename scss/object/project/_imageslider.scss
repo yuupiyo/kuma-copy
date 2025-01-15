@@ -1,1 +1,22 @@
 @use "../../foundation/global" as g;
+
+.p-imageslider {
+  overflow: hidden;
+}
+.p-imageslider__content {
+  display: flex;
+}
+.p-imageslider .p-imageslider__content > * {
+  display: flex;
+  animation: loopslider 45333.33333333334ms linear infinite;
+}
+
+// アニメーション
+@keyframes loopslider {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
