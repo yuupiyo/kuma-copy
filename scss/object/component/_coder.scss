@@ -138,6 +138,59 @@
     }
   }
 }
+// 右上のアイコン
+.c-coder__popup__icon {
+  position: absolute;
+  top: max(g.sp-vw(-10.465),-12px);
+  right: max(g.sp-vw(-5.233),-6px);
+  animation: floating 3s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+  @include g.s-tablet {
+    top: max(g.s-tb-vw(-8.777),-12px);
+    right: max(g.s-tb-vw(-4.389),-6px);
+  }
+  @include g.pc {
+    top: max(g.pc-vw(-11.2),-14px);
+    right: max(g.pc-vw(-8),-10px);
+  }
+  & svg {
+    width: min(g.sp-vw(28.77),33px);
+    height: min(g.sp-vw(28.77),33px);
+    fill: currentColor;
+    transition: fill 0.150s cubic-bezier(0.645, 0.045, 0.355, 1);
+    @include g.s-tablet {
+      width: min(g.s-tb-vw(23.13),33px);
+      height: min(g.s-tb-vw(23.13),33px);
+    }
+    @include g.pc {
+      width: min(g.pc-vw(38.4),48px);
+      height: min(g.pc-vw(38.4),48px);
+    }
+  }
+  & path:nth-of-type(1) {
+    fill: currentColor;
+  }
+  & path:nth-of-type(2) {
+    fill: g.$color-white;
+  }
+  & path:nth-of-type(3) {
+    fill: currentColor;
+  }
+  & path:nth-of-type(4) {
+    fill: g.$color-white;
+  }
+}
+// アイコンのアニメーション
+@keyframes floating {
+  0% {
+    transform: translate3d(0, g.rem(10), 0);
+  }
+  50% {
+    transform: translate3d(0, g.rem(-10), 0);
+  }
+  100% {
+    transform: translate3d(0, g.rem(10), 0);
+  }
+}
 .c-coder__popup__background {
   position: absolute;
   left: auto;
