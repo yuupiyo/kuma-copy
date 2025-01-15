@@ -277,6 +277,20 @@ a {
     font-size: min(1.26953125vw, 16px);
   }
 }
+.c-coder__profile__category::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-top: -0.1785714286em;
+}
+.c-coder__profile__category::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-bottom: -0.1785714286em;
+}
 
 .c-coder__popup__background {
   position: absolute;
