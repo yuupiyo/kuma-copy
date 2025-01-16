@@ -131,11 +131,17 @@
   }
 }
 .p-data__header__coder__object-01 {
+  top: max(g.sp-vw(-41.86),-48px);
+  right: max(g.sp-vw(-54.07),-62px);
   width: min(g.sp-vw(172.23),197.5px);
   @include g.s-tablet {
+    top: max(g.s-tb-vw(-35.108),-48px);
+    right: max(g.s-tb-vw(-45.348),-62px);
     width: min(g.s-tb-vw(144.45),197.5px);
   }
   @include g.pc {
+    top: max(g.pc-vw(-64),-80px);
+    right: max(g.pc-vw(-84.8),-106px);
     width: min(g.pc-vw(263.2),329px);
   }
 }

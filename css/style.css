@@ -424,6 +424,11 @@ a {
             animation-play-state: paused;
   }
 }
+.c-coder__object {
+  position: absolute;
+  z-index: -1;
+}
+
 .c-display__sponly {
   display: block;
 }
@@ -1104,15 +1109,21 @@ a {
 }
 
 .p-data__header__coder__object-01 {
+  top: max(-11.1626666667vw, -48px);
+  right: max(-14.4186666667vw, -62px);
   width: min(45.928vw, 197.5px);
 }
 @media screen and (width >= 561px) {
   .p-data__header__coder__object-01 {
+    top: max(-6.2581105169vw, -48px);
+    right: max(-8.0834224599vw, -62px);
     width: min(25.7486631016vw, 197.5px);
   }
 }
 @media screen and (width >= 1024px) {
   .p-data__header__coder__object-01 {
+    top: max(-6.25vw, -80px);
+    right: max(-8.28125vw, -106px);
     width: min(25.703125vw, 329px);
   }
 }

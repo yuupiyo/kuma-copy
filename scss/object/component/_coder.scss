@@ -231,3 +231,9 @@
     }
   }
 }
+
+// 吹き出しの背景部分
+.c-coder__object {
+  position: absolute;
+  z-index: -1;
+}
