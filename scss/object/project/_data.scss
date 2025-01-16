@@ -124,3 +124,9 @@
     width: min(g.pc-vw(207.77),302px);
   }
 }
+.p-data__header__coder__popup--01 {
+  @include g.pc {
+    bottom: min(g.pc-vw(60.8),76px);
+    left: max(g.pc-vw(-12),-15px);
+  }
+}

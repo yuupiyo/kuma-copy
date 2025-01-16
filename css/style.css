@@ -1096,6 +1096,13 @@ a {
   }
 }
 
+@media screen and (width >= 1024px) {
+  .p-data__header__coder__popup--01 {
+    bottom: min(5.9375vw, 76px);
+    left: max(-1.171875vw, -15px);
+  }
+}
+
 .p-header__inner {
   display: block;
   height: min(29.768vw, 128px);
