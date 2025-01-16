@@ -55,3 +55,29 @@
   color: g.$color-white;
   z-index: 10;
 }
+// main-title
+.p-data__title__main {
+  position: relative;
+  font-size: min(g.sp-vw(21),24px);
+  writing-mode: vertical-rl;
+  @include g.s-tablet {
+    font-size: min(g.s-tb-vw(20),24px);
+  }
+  @include g.pc {
+    font-size: min(g.pc-vw(38),48px);
+  }
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: g.rem(1);
+    height: 100%;
+    background-color: currentColor;
+    @include g.pc {
+      left: g.rem(-1);
+      width: g.rem(3);
+    }
+  }
+}

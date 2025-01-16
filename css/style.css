@@ -1002,6 +1002,38 @@ a {
   z-index: 10;
 }
 
+.p-data__title__main {
+  position: relative;
+  font-size: min(5.6vw, 24px);
+  writing-mode: vertical-rl;
+}
+@media screen and (width >= 561px) {
+  .p-data__title__main {
+    font-size: min(3.5650623886vw, 24px);
+  }
+}
+@media screen and (width >= 1024px) {
+  .p-data__title__main {
+    font-size: min(3.7109375vw, 48px);
+  }
+}
+.p-data__title__main::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.0625rem;
+  height: 100%;
+  background-color: currentColor;
+}
+@media screen and (width >= 1024px) {
+  .p-data__title__main::before {
+    left: -0.0625rem;
+    width: 0.1875rem;
+  }
+}
+
 .p-header__inner {
   display: block;
   height: min(29.768vw, 128px);
