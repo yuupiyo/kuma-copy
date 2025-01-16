@@ -953,6 +953,26 @@ a {
     padding: 0 0 min(3.90625vw, 50px);
   }
 }
+.p-data::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../../../img/bg/bg_code.webp);
+  background-position: 0 center;
+  background-repeat: repeat;
+  background-size: 43.53125rem 43.125rem;
+  z-index: -1;
+  opacity: 0.05;
+}
+@media screen and (width >= 1024px) {
+  .p-data::before {
+    background-size: 87.0625rem 86.25rem;
+  }
+}
 
 .p-header__inner {
   display: block;

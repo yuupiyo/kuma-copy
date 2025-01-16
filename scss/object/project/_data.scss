@@ -11,4 +11,22 @@
   @include g.pc {
     padding: 0 0 min(g.pc-vw(40),50px);
   }
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../../../img/bg/bg_code.webp);
+    background-position: 0 center;
+    background-repeat: repeat;
+    background-size: g.rem(696.5) g.rem(690);
+    z-index: -1;
+    opacity: 0.05;
+    @include g.pc {
+      background-size: g.rem(1393) g.rem(1380);
+    }
+  }
 }
