@@ -248,3 +248,13 @@
   height: 100%;
   z-index: 1;
 }
+.c-coder__object__text {
+  display: block;
+  position: relative;
+  letter-spacing: calc(-5 / 1000* 1em);
+  white-space: nowrap;
+  z-index: 1;
+  & img {
+    width: 100%;
+  }
+}

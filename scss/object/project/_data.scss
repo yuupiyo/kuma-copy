@@ -121,7 +121,11 @@
   }
   @include g.pc {
     left: max(g.pc-vw(-168.416),-210.52px);
-    width: min(g.pc-vw(207.77),302px);
+    width: min(g.pc-vw(207.77),259.73px);
+  }
+  @include g.l-pc {
+    left: g.rem(-277);
+    width: g.rem(302);
   }
 }
 .p-data__header__coder__popup--01 {
@@ -154,5 +158,21 @@
   @include g.pc {
     margin-top: max(g.pc-vw(-8),-10px);
     margin-left: min(g.pc-vw(26.4),33px);
+  }
+  @include g.l-pc {
+    margin-top: g.rem(-1);
+    margin-left: g.rem(33);
+  }
+}
+.p-data__header__coder__object__text--01 {
+  width: min(g.sp-vw(111.63),128px);
+  @include g.s-tablet {
+    width: min(g.s-tb-vw(93.62),128px);
+  }
+  @include g.pc {
+    width: min(g.pc-vw(147.16),183.95px);
+  }
+  @include g.l-pc {
+    width: g.rem(219);
   }
 }
