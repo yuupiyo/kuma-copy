@@ -1225,6 +1225,27 @@ a {
   }
 }
 
+.p-data__header__coder__popup--02 {
+  bottom: min(6.5117333333vw, 28px);
+  left: auto;
+  right: min(4.1861333333vw, 18px);
+  padding: min(4.6512vw, 20px) min(2.3256vw, 10px);
+}
+@media screen and (width >= 561px) {
+  .p-data__header__coder__popup--02 {
+    bottom: min(3.6506238859vw, 28px);
+    right: min(2.3468805704vw, 18px);
+    padding: min(2.607486631vw, 20px) min(1.3037433155vw, 10px);
+  }
+}
+@media screen and (width >= 1024px) {
+  .p-data__header__coder__popup--02 {
+    bottom: min(5.9375vw, 76px);
+    right: max(-0.78125vw, -10px);
+    padding: min(1.640625vw, 21px) min(1.8538324421vw, 13px);
+  }
+}
+
 .p-header__inner {
   display: block;
   height: min(29.768vw, 128px);

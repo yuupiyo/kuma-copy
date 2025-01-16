@@ -197,3 +197,19 @@
     width: g.rem(268);
   }
 }
+.p-data__header__coder__popup--02 {
+  bottom: min(g.sp-vw(24.419),28px);
+  left: auto;
+  right: min(g.sp-vw(15.698),18px);
+  padding: min(g.sp-vw(17.442),20px) min(g.sp-vw(8.721),10px);
+  @include g.s-tablet {
+    bottom: min(g.s-tb-vw(20.48),28px);
+    right: min(g.s-tb-vw(13.166),18px);
+    padding: min(g.s-tb-vw(14.628),20px) min(g.s-tb-vw(7.314),10px);
+  }
+  @include g.pc {
+    bottom: min(g.pc-vw(60.8),76px);
+    right: max(g.pc-vw(-8),-10px);
+    padding: min(g.pc-vw(16.8),21px) min(g.s-tb-vw(10.4),13px);
+  }
+}
