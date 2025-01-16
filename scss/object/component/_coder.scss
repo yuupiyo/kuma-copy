@@ -15,6 +15,13 @@
   @extend .c-coder;
 }
 
+// イメージ画像
+.c-coder__image {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
 // キャッチコピー
 .c-coder__catch {
   display: flex;

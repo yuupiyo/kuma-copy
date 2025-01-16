@@ -94,3 +94,33 @@
     margin-right: min(g.pc-vw(37.6),47px);
   }
 }
+
+// header内coderarea
+.p-data__header__coder__area {
+  position: relative;
+  width: fit-content;
+  margin: min(g.sp-vw(72.384),83px) auto 0;
+  @include g.s-tablet {
+    margin: min(g.s-tb-vw(60.708),83px) auto 0;
+  }
+  @include g.pc {
+    position: static;
+    width: auto;
+    margin: 0;
+  }
+}
+// header内右側のcoder
+.p-data__header__coder--01 {
+  position: absolute;
+  bottom: 0;
+  left: max(g.sp-vw(-89.826),-103px);
+  width: min(g.sp-vw(157.84),181px);
+  @include g.s-tablet {
+    left: max(g.s-tb-vw(-75.336),-103px);
+    width: min(g.s-tb-vw(132.38),181px);
+  }
+  @include g.pc {
+    left: max(g.pc-vw(-168.416),-210.52px);
+    width: min(g.pc-vw(207.77),302px);
+  }
+}
