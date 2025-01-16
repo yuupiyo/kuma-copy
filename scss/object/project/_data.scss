@@ -130,7 +130,7 @@
     left: max(g.pc-vw(-12),-15px);
   }
 }
-.p-data__header__coder__object-01 {
+.p-data__header__coder__object--01 {
   top: max(g.sp-vw(-41.86),-48px);
   right: max(g.sp-vw(-54.07),-62px);
   width: min(g.sp-vw(172.23),197.5px);
@@ -143,5 +143,16 @@
     top: max(g.pc-vw(-64),-80px);
     right: max(g.pc-vw(-84.8),-106px);
     width: min(g.pc-vw(263.2),329px);
+  }
+}
+.p-data__header__coder__object__inner--01 {
+  margin-top: 0;
+  margin-left: min(g.sp-vw(12.209),14px);
+  @include g.s-tablet {
+    margin-left: min(g.s-tb-vw(10.24),14px);
+  }
+  @include g.pc {
+    margin-top: max(g.pc-vw(-8),-10px);
+    margin-left: min(g.pc-vw(26.4),33px);
   }
 }
