@@ -1034,6 +1034,23 @@ a {
   }
 }
 
+.p-data__title__sub {
+  width: min(37.6746666667vw, 162px);
+  margin-right: min(5.3488vw, 23px);
+}
+@media screen and (width >= 561px) {
+  .p-data__title__sub {
+    width: min(21.1212121212vw, 162px);
+    margin-right: min(2.9987522282vw, 23px);
+  }
+}
+@media screen and (width >= 1024px) {
+  .p-data__title__sub {
+    width: min(25.234375vw, 323px);
+    margin-right: min(3.671875vw, 47px);
+  }
+}
+
 .p-header__inner {
   display: block;
   height: min(29.768vw, 128px);

@@ -81,3 +81,16 @@
     }
   }
 }
+// sub-title
+.p-data__title__sub {
+  width: min(g.sp-vw(141.28),162px);
+  margin-right: min(g.sp-vw(20.058),23px);
+  @include g.s-tablet {
+    width: min(g.s-tb-vw(118.49),162px);
+    margin-right: min(g.s-tb-vw(16.823),23px);
+  }
+  @include g.pc {
+    width: min(g.pc-vw(258.4),323px);
+    margin-right: min(g.pc-vw(37.6),47px);
+  }
+}
