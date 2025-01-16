@@ -109,7 +109,7 @@
     margin: 0;
   }
 }
-// header内右側のcoder
+// header内左側のcoder
 .p-data__header__coder--01 {
   position: absolute;
   bottom: 0;
@@ -174,5 +174,26 @@
   }
   @include g.l-pc {
     width: g.rem(219);
+  }
+}
+// header内右側coder
+.p-data__header__coder--02 {
+  width: min(g.sp-vw(157.84),181px);
+  transform: translateX(min(g.sp-vw(100),114px));
+  z-index: 11;
+  @include g.s-tablet {
+    width: min(g.s-tb-vw(132.38),181px);
+    transform: translateX(min(g.s-tb-vw(83),114px));
+  }
+  @include g.pc {
+    position: absolute;
+    bottom: 0;
+    right: max(g.pc-vw(-176),-220px);
+    width: min(g.pc-vw(184.383),181px);
+    transform: translateX(0);
+  }
+  @include g.l-pc {
+    right: g.rem(-275);
+    width: g.rem(268);
   }
 }

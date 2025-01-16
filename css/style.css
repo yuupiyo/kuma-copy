@@ -1198,6 +1198,33 @@ a {
   }
 }
 
+.p-data__header__coder--02 {
+  width: min(42.0906666667vw, 181px);
+  transform: translateX(min(26.6666666667vw, 114px));
+  z-index: 11;
+}
+@media screen and (width >= 561px) {
+  .p-data__header__coder--02 {
+    width: min(23.5971479501vw, 181px);
+    transform: translateX(min(14.7950089127vw, 114px));
+  }
+}
+@media screen and (width >= 1024px) {
+  .p-data__header__coder--02 {
+    position: absolute;
+    bottom: 0;
+    right: max(-17.1875vw, -220px);
+    width: min(18.0061523438vw, 181px);
+    transform: translateX(0);
+  }
+}
+@media screen and (width >= 1441px) {
+  .p-data__header__coder--02 {
+    right: -17.1875rem;
+    width: 16.75rem;
+  }
+}
+
 .p-header__inner {
   display: block;
   height: min(29.768vw, 128px);
