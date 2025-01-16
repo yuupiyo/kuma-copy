@@ -44,3 +44,14 @@
     padding: min(g.pc-vw(138.4),173px) 0 min(g.pc-vw(129.6),162px);
   }
 }
+
+// title
+.p-data__title__area {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-start;
+  color: g.$color-white;
+  z-index: 10;
+}

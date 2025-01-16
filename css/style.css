@@ -992,6 +992,16 @@ a {
   }
 }
 
+.p-data__title__area {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-start;
+  color: #ffffff;
+  z-index: 10;
+}
+
 .p-header__inner {
   display: block;
   height: min(29.768vw, 128px);
