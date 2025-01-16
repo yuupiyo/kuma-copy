@@ -1103,6 +1103,20 @@ a {
   }
 }
 
+.p-data__header__coder__object-01 {
+  width: min(45.928vw, 197.5px);
+}
+@media screen and (width >= 561px) {
+  .p-data__header__coder__object-01 {
+    width: min(25.7486631016vw, 197.5px);
+  }
+}
+@media screen and (width >= 1024px) {
+  .p-data__header__coder__object-01 {
+    width: min(25.703125vw, 329px);
+  }
+}
+
 .p-header__inner {
   display: block;
   height: min(29.768vw, 128px);

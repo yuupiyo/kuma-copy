@@ -130,3 +130,12 @@
     left: max(g.pc-vw(-12),-15px);
   }
 }
+.p-data__header__coder__object-01 {
+  width: min(g.sp-vw(172.23),197.5px);
+  @include g.s-tablet {
+    width: min(g.s-tb-vw(144.45),197.5px);
+  }
+  @include g.pc {
+    width: min(g.pc-vw(263.2),329px);
+  }
+}
