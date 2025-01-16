@@ -30,3 +30,17 @@
     }
   }
 }
+
+.p-data__header__inner {
+  position: relative;
+  width: min(g.sp-vw(300),448px);
+  margin: 0 auto;
+  padding: 0;
+  @include g.s-tablet {
+    width: min(g.s-tb-vw(482.72),680px);
+  }
+  @include g.pc {
+    width: min(g.pc-vw(544),680px);
+    padding: min(g.pc-vw(138.4),173px) 0 min(g.pc-vw(129.6),162px);
+  }
+}

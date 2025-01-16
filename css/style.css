@@ -974,6 +974,24 @@ a {
   }
 }
 
+.p-data__header__inner {
+  position: relative;
+  width: min(80vw, 448px);
+  margin: 0 auto;
+  padding: 0;
+}
+@media screen and (width >= 561px) {
+  .p-data__header__inner {
+    width: min(86.0463458111vw, 680px);
+  }
+}
+@media screen and (width >= 1024px) {
+  .p-data__header__inner {
+    width: min(53.125vw, 680px);
+    padding: min(13.515625vw, 173px) 0 min(12.65625vw, 162px);
+  }
+}
+
 .p-header__inner {
   display: block;
   height: min(29.768vw, 128px);
