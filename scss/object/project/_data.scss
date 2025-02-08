@@ -213,3 +213,14 @@
     padding: min(g.pc-vw(16.8),21px) min(g.s-tb-vw(10.4),13px);
   }
 }
+.p-data__header__coder__object--02 {
+  top: max(g.sp-vw(-46.221),-53px);
+  right: min(g.sp-vw(60.174),69px);
+  width: min(g.sp-vw(179.65),216px);
+  @include g.s-tablet {
+    width: min(g.s-tb-vw(150.67),216px);
+  }
+  @include g.pc {
+    width: min(g.pc-vw(244),305px);
+  }
+}

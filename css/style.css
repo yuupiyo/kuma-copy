@@ -1246,6 +1246,22 @@ a {
   }
 }
 
+.p-data__header__coder__object--02 {
+  top: max(-12.3256vw, -53px);
+  right: min(16.0464vw, 69px);
+  width: min(47.9066666667vw, 216px);
+}
+@media screen and (width >= 561px) {
+  .p-data__header__coder__object--02 {
+    width: min(26.8573975045vw, 216px);
+  }
+}
+@media screen and (width >= 1024px) {
+  .p-data__header__coder__object--02 {
+    width: min(23.828125vw, 305px);
+  }
+}
+
 .p-header__inner {
   display: block;
   height: min(29.768vw, 128px);
